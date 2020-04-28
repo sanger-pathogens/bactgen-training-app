@@ -94,5 +94,3 @@ Without knowing the biology of the bacteria you are looking at, or the scenario 
 
 >**<span style="color:#246CAA; font-size:1.5em">Question 1</span>** 
 <br/>In the F1 slack group, comment on how you would interpret what you think is going on with clade 3 given that you only have the above information? When answering, think about where these samples were isolated and the dates when they were collected?
-
-# Hello
