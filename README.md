@@ -155,7 +155,7 @@ To beggin, watch the video below. The time stamp you need is till 0:00 to 0:54 w
 <iframe width="440" height="415" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Exercise
-With your new found knowledge on how to browse genomes in pathogen watch. Navigate to the ‘genomes’ tab. Filter for Streptococcus pneumoniae. 
+With your new found knowledge on how to browse genomes in pathogen watch. Navigate to the ‘genomes’ tab. Filter for _Streptococcus pneumoniae_. 
 
 >**<span style="color:#FC8E22; font-size:1.5em">Question 3</span>**
 <br/>How many genomes are from South Africa?
@@ -169,9 +169,9 @@ With your new found knowledge on how to browse genomes in pathogen watch. Naviga
 In the slack channel, share your answers with other participants.
 
 ### Browsing collections
-You can also explore genome collections of several species in the _collections_ tab. Although only a limited number are supported, there is a wealth of information contained here. Navigate to the Salmonella Typhi public genome collection. Click _view collection_ (you may need to hover over the area to see the link to _view collection_). Here you can view the phylogenetic structure of nearly 5000 strains in the collection. You can choose to browse the data and filter it by a particular characteristic in the data. The most powerful use of the collection data, is the ability to download the metadata and other genotypic information as shown in the image below. Give it a try!
+You can also explore genome collections of several species in the _'collections'_ tab. Although only a limited number are supported, there is a wealth of information contained here. Navigate to the _Salmonella_ Typhi public genome collection. Click _'view collection'_ (you may need to hover over the area to see the link to _'view collection'_). Here you can view the phylogenetic structure of nearly 5000 strains in the collection. You can choose to browse the data and filter it by a particular characteristic in the data. The most powerful use of the collection data, is the ability to download the metadata and other genotypic information as shown in the image below. Give it a try!
 
 {image 14}
 
 ## End of module
-You have now reached the end of Fundamental 1. In Fundamental 2 we will use pathogen watch to analyse sequence data including AMR prediction, cluster analysis (popunk) and serotyping (seroBA) for Streptococcus pneumoniae. We hope you enjoyed the module and will join us in Fundamental 2.
+You have now reached the end of Fundamental 1. In Fundamental 2 we will use pathogen watch to analyse sequence data including AMR prediction, cluster analysis (popunk) and serotyping (seroBA) for _Streptococcus pneumoniae_. We hope you enjoyed the module and will join us in Fundamental 2.
