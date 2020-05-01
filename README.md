@@ -24,8 +24,10 @@ Phylogenetic trees based on whole genome data tell us about the relationships of
 <br/>The F1 example denoting sample locations across the UK are fictitious and solely used for educational purposes. These data were never collected from the GPS coordinates quoted.
 
 ---
-{image 1}
-Sketch by Charles Darwin circa 1837. Image source: wikimedia commons
+<div class="col-sm-2" style="width: 400px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image1.png"></img>
+</div>
+<center style="font-size:0.75em">Sketch by Charles Darwin circa 1837. Image source: wikimedia commons</center>
 
 ## A short introduction to phylogenetic trees
 Phylogeny is the study of genetic relationships between different taxa, or in our case, bacterial samples. Because we can infer relationships between samples collected at different times, sources and places, we can use this tool to trace the evolution and spread of a bacterial pathogen and has been a very useful tool to identify disease outbreaks. 
@@ -35,11 +37,15 @@ Phylogenetic trees are constructed based on mathematical models that apply the n
 
 Tree interpretation requires us to first know the elements that make up the tree. There are four main characteristics, _**a)**_ the **topology**, describes the shape of the tree, _**b)**_ the **branches**, describe the genetic change between samples and lastly _**c)**_ the **nodes**, the points at the end of branches (<span style="color:red">red</span>) which can be at the root (<span style="color:orange">orange</span>), internal (<span style="color:blue">blue</span>) or the tip or leaf (<span style="color:purple">purple</span>). You may sometimes see numbers on the nodes of trees, these are the bootstrap values that denote the confidence or accuracy of  the tree.
 
-{image 2}
+<div class="col-sm-2" style="width: 400px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image2.png"></img>
+</div>
 
 The root of the tree represents the ancestral strain and the tips or leaves are the descendants. The same topology tree can be drawn in different ways with the most popular formats being rectangular, radial and circular. Choosing the format is down to you and how the type of tree you choose best represents your data. For example when you have few samples it may suit to draw a rectangular tree, but when you have hundreds or even thousands, maybe a radial tree would be a better choice.
 
-{image 3}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image3.png"></img>
+</div>
 
 When reading the tree, the vertical distance in a rectangular tree doesn't mean anything and the nodes can be freely rotated. It is the branch length (horizontal distance) that will link the rectangular tree to the other type of tree hence the type of tree can be altered without altering the information describing the evolutionary relationship between the different taxa or samples.
 
@@ -64,7 +70,9 @@ The second file you will need as an input for microreact is the metadata file in
 ### Batch geocoding to obtain Latitude and Longitude
 <br/>We will first obtain the latitude and longitude using free webtools. There are plenty of ways to get coordinates (e.g. using a simple search on google), however with multiple samples, it is easier to submit this in batches. We will use [localfocus](https://geocode.localfocus.nl/) for this. Copy and paste the ‘address’ column into the box, making sure to Indicate the country to improve search results. Click ‘add to geocoder’. The results should appear in the box below in only a few seconds. Making sure to select the ‘decimals with dots’, you can now copy and paste the coordinates to a spreadsheet. You will notice that some of the geocodes have status ‘doubt’. This can happen. If you are not sure about the address you can confirm other websites e.g. [latlong](https://www.latlong.net/) or google [maps](https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en). 
  
- {image 4}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image4.png"></img>
+</div>
 
 ### Customising your metadata
 <br/>One of the advantages of microreact is being able to display geographical locations along with the phylogenetic information, collectively known as phylogeography.  You can also display other information you find useful and to do so, you need only format your metadata table. We will be forming our data using the [guidelines](https://microreact.org/instructions) provided by microreact.
@@ -73,7 +81,9 @@ Open the metadata.xls file you added the lat/long information into. We will be f
 
 More instructions on formatting your metadata can be found in the [guidelines](https://microreact.org/instructions) detailed in microreact. Choosing the colours is simple. You can use a website like [colorpicker](https://www.webfx.com/web-design/color-picker/) to obtain the HEX colour codes which all begin with a hash symbol ‘#’ followed by a series of numbers and/or letters. Your metadata table should now look like the figure below.
 
-{image 5}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image5.png"></img>
+</div>
 
 When you are happy with your metadata sheet, we will now save this file as a CSV file, go to _File_ > _Save as_ > _Select_ ‘**CSV UTF-8 (comma delimited) (.csv)**’ from the drop down menu in '_file format_' then '_Save_'. A dialogue box will appear asking if you are sure you want to save it as csv and some formatting may be lost, don’t worry about this, click ‘**yes**’.  We are now ready to view our data in microreact.
 
@@ -83,7 +93,9 @@ Provide a name for your project and a brief description if you like. You may lea
 
 Your project should look something like the picture below. The map panel on the left, the phylogenetic tree on the right panel and the timeline at the bottom. There are many features to microreact and we recommend you watch the microreact [video tutorial](https://microreact.org/introduction) on the full range of functions before proceeding.
 
-{image 6}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image6.png"></img>
+</div>
 
 ### Interpreting the georeferenced data
 Once you have customised your visual display of the data we can now start to infer the relationship between the samples. Taking a closer look at the tree. How many groups can you see? To help you, you can try looking at the different tree layouts from the tree control toggle. Please watch the microreact [instructional video](https://microreact.org/introduction) for where to find this.
@@ -104,11 +116,15 @@ Citation: [Hadfield et al., Bioinformatics (2017)](https://doi.org/10.1093/bioin
 ### Loading your data
 Phandango, like microreact requires the user to provide a phylogenetic tree file in NEWICK format as before and the accompanying data in specific formats. For the first exercise we will first practise using the data we have from the previous section. Navigate to the [phandango](https://jameshadfield.github.io/phandango/#/) homepage and select **both** the tree file (F1_tree.nwk) and the metadata.csv file that you formatted and saved for microreact and ‘drop’ them onto the page.
 
-{image 7}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image7.png"></img>
+</div>
 
 The results should load like in the image below.
 
-{image 8}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image8.png"></img>
+</div>
 
 You will notice the colours have been automatically added. We will now work on displaying the data a bit better. You will notice  there are three grey circles on the page. These allow you to resize the panel by just clicking and holding these buttons. Give it a try! 
 
@@ -116,23 +132,31 @@ You will notice that part of the tree is obscured. Use the scroll wheel on your 
 
 In the metadata panel, you will notice we have a few columns showing the same information. We can choose to not display these. Go to settings in the menu bar > _metadata_ > _toggle columns_. Toggle off the columns you do not want to display. You will also notice there are many controls in the setting menu that allow you to further customise your data. Have a go at changing a few of them. Click settings again to return to the main page.
 
-{image 9}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image9.png"></img>
+</div>
 
 Another useful piece of information to display is the key. To display the key, press _'k'_ on your keyboard. Your display should look like the image below. Before saving the image we will toggle off the phandango logo, however you **MUST** [cite](https://academic.oup.com/bioinformatics/article/34/2/292/4212949) it properly in any subsequent publication, presentation or use. To toggle the logo off, go to settings and at the bottom of the first column you will find the _'Phandango logo on/off'_ toggle.
 
 When you are ready to save the image you can either take a screenshot or press _'p'_ on your keyboard. This will download an SVG file. This is a scalable vector graphic that allows users to expand and shrink the image without losing the quality. SVG files can be opened in the browser, simply by clicking it (whereby you can take a screenshot) or you can use a free software such as [imagemagick](http://www.imagemagick.org/script/index.php) to convert the SVG file to PDF or PNG. For the more experienced users you can use an image editing program like [Inkscape](https://inkscape.org/) (which is free) or Adobe Illustrator. More on saving phandango data displays can be found [here](https://github.com/jameshadfield/phandango/wiki/FAQ#screenshots).
 
-{image 10}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image10.png"></img>
+</div>
 
 ### Visualising grouped data
 The advantage of using phandango to visualise metadata, is that you can quickly look at genetic attributes of your samples. In this next section we are going to visualise predicted antimicrobial resistance (AMR) gene data. You will need the **F1_resistance_data.xls** file which you can download from [here](ftp://ftp.sanger.ac.uk/pub/pathogens/bactGen_training/f1/). Included are the resistance profiles for three acquired genes, _aadA2_, _cmlA_ and _sul_, normally found on plasmids and are subject to [horizontal gene transfer](https://en.wikipedia.org/wiki/Horizontal_gene_transfer) (HGT). This means these plasmid located genes can be transferred between other bacterial cells nearby by a process known as conjugation. The remaining gene, _gyrA_, is located on the chromosome of the bacteria. 
 We are going to format the table to visualise the AMR data. The resistance profile is denoted by two letters, _R_ and _S_, which stand for resistant, meaning the sample possesses the gene conferring resistance, and sensitive, meaning it lacks the gene. For some information it would be a good idea to group the data to look for similarities in the samples. We will group them by colour. Phandango accepts multiple ways to group samples by colour. More information can be found [here](https://github.com/jameshadfield/phandango/wiki/Input%20data%20formats). However to customise the data we will add HEX values in a separate column as in the example below. You may find this method more useful if you need to transfer the data across to other platforms such as microreact with minimal editing. As with the microreact metadata sheet, the column header must start with the same name and add ‘<span style="font-family:papyrus">:colour</span>’ to the name. Use [colorpicker](https://www.webfx.com/web-design/color-picker/) to select suitable colours to group _R_ and _S_.
 
-{image 11}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image11.png"></img>
+</div>
 
 Save the resistance metadata as a CSV file as you did before. Selecting your newly saved CSV file and the F1_tree.nwk  tree file, drag and drop them onto the landing page of phandango.
 
-{image 12}
+<div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image12.png"></img>
+</div>
 
 You can now see the relationship of the samples and their resistance profile. The blue colour indicates sensitivity and the orange are resistant. Comparing the genetic relationship of the isolates and the resistance profiles, you can see that some of the isolates that are grouped in the tree have similar grouping in the resistance profile. 
 Try combining the resistance data with the metadata. Can you start to postulate which strains may be part of an outbreak and which may not? 
@@ -143,7 +167,9 @@ Try combining the resistance data with the metadata. Can you start to postulate 
 
 You may also choose to view the newly combined metadata table in microreact making sure to edit the column headers to the acceptable format outlined by microreact.
 
-{image 13}
+<div class="col-sm-2" style="width: 650px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image13.png"></img>
+</div>
 
 ---
 ## Pathogenwatch
@@ -152,7 +178,7 @@ You may also choose to view the newly combined metadata table in microreact maki
 ### Browsing genomes
 To beggin, watch the video below. The time stamp you need is till 0:00 to 0:54 where you will learn to select sequences of interest. We will cover the latter half of the video in F2.
 
-<iframe width="440" height="415" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Exercise
 With your new found knowledge on how to browse genomes in pathogen watch. Navigate to the ‘genomes’ tab. Filter for _Streptococcus pneumoniae_. 
@@ -171,7 +197,9 @@ In the slack channel, share your answers with other participants.
 ### Browsing collections
 You can also explore genome collections of several species in the _'collections'_ tab. Although only a limited number are supported, there is a wealth of information contained here. Navigate to the _Salmonella_ Typhi public genome collection. Click _'view collection'_ (you may need to hover over the area to see the link to _'view collection'_). Here you can view the phylogenetic structure of nearly 5000 strains in the collection. You can choose to browse the data and filter it by a particular characteristic in the data. The most powerful use of the collection data, is the ability to download the metadata and other genotypic information as shown in the image below. Give it a try!
 
-{image 14}
+<div class="col-sm-2" style="width: 650px; margin-left: auto; margin-right: auto;">
+   <img src="/img/Image14.png"></img>
+</div>
 
 ## End of module
 You have now reached the end of Fundamental 1. In Fundamental 2 we will use pathogen watch to analyse sequence data including AMR prediction, cluster analysis (popunk) and serotyping (seroBA) for _Streptococcus pneumoniae_. We hope you enjoyed the module and will join us in Fundamental 2.
