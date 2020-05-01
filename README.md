@@ -178,7 +178,9 @@ You may also choose to view the newly combined metadata table in microreact maki
 ### Browsing genomes
 To beggin, watch the video below. The time stamp you need is till 0:00 to 0:54 where you will learn to select sequences of interest. We will cover the latter half of the video in F2.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class ="videoWrapper">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Exercise
 With your new found knowledge on how to browse genomes in pathogen watch. Navigate to the ‘genomes’ tab. Filter for _Streptococcus pneumoniae_. 
