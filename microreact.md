@@ -1,4 +1,5 @@
-## Microreact
+<h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Microreact</span></h1>
+
 [Microreact](https://microreact.org/showcase) is a free online tool that will enable you to visualize phylogenetic relationships of isolates linked to geographic locations. This tool allows for dynamic visualization of the data with an interactive map using your own phylogenetic tree and metadata.
    <br/>**Citation:** [Argimón et al., Microb Genom(2016)](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000093).
 
@@ -48,3 +49,5 @@ Without knowing the biology of the bacteria you are looking at, or the scenario 
 
 >**<span style="color:#FC8E22; font-size:1.5em">Question 1</span>** 
 <br/>In the F1 slack group, comment on how you would interpret what you think is going on with clade 3 given that you only have the above information? When answering, think about where these samples were isolated and the dates when they were collected?
+
+</br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
