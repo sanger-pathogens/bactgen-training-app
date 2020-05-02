@@ -1,4 +1,4 @@
 <!-- docs/_sidebar.md -->
 
-* [Home](/)
-* [Guide](test.md)
+* [Welcome to the Module](/)
+* [Microreact](test.md)

@@ -3,10 +3,10 @@
 In this training module, we will use three different web-based tools, [Microreact](https://microreact.org/showcase) and [Phandango](https://github.com/jameshadfield/phandango/wiki) to visualise phylogenetic trees and metadata. We will explore [Pathogenwatch](https://pathogen.watch/) as a method of browsing publically available genomes and associated metadata. We will cover the different file types used by the web-based tools, how to customise your data and how to save the figures you generate which can be used in publications.
 
 >**Educators**
-<br/>Christine Boinett (Lead educator), Stephanie W. Lo, Dorota Jamrozy
+<br/>Christine Boinett (Lead educator), Stephanie W. Lo and Dorota Jamrozy
 
 >**Contributors** 
-<br/>Christine Boinett, Gareth Peat, Stephanie W. Lo, Dorota Jamrozy, Neil MacAlasdair, Kate Baker, and Stephen Bentley. 
+<br/>Christine Boinett, Gareth Peat, Stephanie W. Lo, Dorota Jamrozy, Neil MacAlasdair, Kate Baker and Stephen Bentley. 
 
 ---
 ## Introduction
@@ -61,21 +61,21 @@ When reading the tree, the vertical distance in a rectangular tree doesn't mean 
    <br/>**Citation:** [Argimón et al., Microb Genom(2016)](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000093).
 
 ### File formats
-<br/>Microreact allows users to upload and visualise their own data, with the user needing only to provide a phylogenetic tree (in .nwk format) and a metadata file (in .csv format). The newick (nwk) file format is a computer readable file produced by most tree-building programs. This text-based file details how to graphically display the relatedness of samples in a phylogenetic tree. To view what the text looks like you can open the file in TextEdit or BBEdit for macOS and notepad for Windows systems.
+Microreact allows users to upload and visualise their own data, with the user needing only to provide a phylogenetic tree (in .nwk format) and a metadata file (in .csv format). The newick (nwk) file format is a computer readable file produced by most tree-building programs. This text-based file details how to graphically display the relatedness of samples in a phylogenetic tree. To view what the text looks like you can open the file in TextEdit or BBEdit for macOS and notepad for Windows systems.
 
 From the files we have provided from the [repository](ftp://ftp.sanger.ac.uk/pub/pathogens/bactGen_training/f1/), open the **F1_tree.nwk** file provided. You will see a series of numbers and/or names in brackets/parentheses separated by a comma or colon. The first name (stm8 in this instance), is the name of a node relating to a sample. The colon (:) separates the name from the branch length (with or without a decimal point). Following that is a comma (,) which separates the node and the tree ends with a semicolon (;). More information on the newick file format can be found [here](https://en.wikipedia.org/wiki/Newick_format).
 
 The second file you will need as an input for microreact is the metadata file in csv format. You can create and edit the file in Microsoft Excel if you wish then ‘save as’ a CSV (UTF-8 comma delimited) file. Open the **F1_metadata.xls** file. You will notice, it only contains some very basic information including, ID, year, Month and address. Sometimes this is the only information provided. Before we can use it in microreact, we have to add a few things to display useful information and make it compatible with the software.
 
 ### Batch geocoding to obtain Latitude and Longitude
-<br/>We will first obtain the latitude and longitude using free webtools. There are plenty of ways to get coordinates (e.g. using a simple search on google), however with multiple samples, it is easier to submit this in batches. We will use [localfocus](https://geocode.localfocus.nl/) for this. Copy and paste the ‘address’ column into the box, making sure to Indicate the country to improve search results. Click ‘add to geocoder’. The results should appear in the box below in only a few seconds. Making sure to select the ‘decimals with dots’, you can now copy and paste the coordinates to a spreadsheet. You will notice that some of the geocodes have status ‘doubt’. This can happen. If you are not sure about the address you can confirm other websites e.g. [latlong](https://www.latlong.net/) or google [maps](https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en). 
+We will first obtain the latitude and longitude using free webtools. There are plenty of ways to get coordinates (e.g. using a simple search on google), however with multiple samples, it is easier to submit this in batches. We will use [localfocus](https://geocode.localfocus.nl/) for this. Copy and paste the ‘address’ column into the box, making sure to Indicate the country to improve search results. Click ‘add to geocoder’. The results should appear in the box below in only a few seconds. Making sure to select the ‘decimals with dots’, you can now copy and paste the coordinates to a spreadsheet. You will notice that some of the geocodes have status ‘doubt’. This can happen. If you are not sure about the address you can confirm other websites e.g. [latlong](https://www.latlong.net/) or google [maps](https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en). 
  
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
    <img src="/img/Image4.png"></img>
 </div>
 
 ### Customising your metadata
-<br/>One of the advantages of microreact is being able to display geographical locations along with the phylogenetic information, collectively known as phylogeography.  You can also display other information you find useful and to do so, you need only format your metadata table. We will be forming our data using the [guidelines](https://microreact.org/instructions) provided by microreact.
+One of the advantages of microreact is being able to display geographical locations along with the phylogenetic information, collectively known as phylogeography.  You can also display other information you find useful and to do so, you need only format your metadata table. We will be forming our data using the [guidelines](https://microreact.org/instructions) provided by microreact.
 
 Open the metadata.xls file you added the lat/long information into. We will be formating this file to display information we find useful. The ‘id’ name will remain unchanged, as this **MUST** match the id’s in the newick tree file. Next is the year, you will notice that these are all the same and would not be interesting to highlight. The months, however may be interesting to visualise in different colours as these may help link temporal data with the phylogenetic distribution, which can be useful when tracking the spread of a particular strain. We will do the same for the institute. The month will be defined by colour by adding a column titled, ’<span style="font-family:papyrus">month__colour</span>’, note that these are **two underscores**. Also note, that to correctly display the timeline, the day, month and year will need to be in numeric form and the column header denoted with a double underscore as in the image below.
 
@@ -167,7 +167,7 @@ Try combining the resistance data with the metadata. Can you start to postulate 
 
 You may also choose to view the newly combined metadata table in microreact making sure to edit the column headers to the acceptable format outlined by microreact.
 
-<div class="col-sm-2" style="width: 650px; margin-left: auto; margin-right: auto;">
+<div class="col-sm-2" style="width: 700px; margin-left: auto; margin-right: auto;">
    <img src="/img/Image13.png"></img>
 </div>
 
@@ -199,7 +199,7 @@ In the slack channel, share your answers with other participants.
 ### Browsing collections
 You can also explore genome collections of several species in the _'collections'_ tab. Although only a limited number are supported, there is a wealth of information contained here. Navigate to the _Salmonella_ Typhi public genome collection. Click _'view collection'_ (you may need to hover over the area to see the link to _'view collection'_). Here you can view the phylogenetic structure of nearly 5000 strains in the collection. You can choose to browse the data and filter it by a particular characteristic in the data. The most powerful use of the collection data, is the ability to download the metadata and other genotypic information as shown in the image below. Give it a try!
 
-<div class="col-sm-2" style="width: 650px; margin-left: auto; margin-right: auto;">
+<div class="col-sm-2" style="width: 700px; margin-left: auto; margin-right: auto;">
    <img src="/img/Image14.png"></img>
 </div>
 
