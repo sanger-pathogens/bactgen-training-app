@@ -1,7 +1,8 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Microreact</span></h1>
 
 [Microreact](https://microreact.org/showcase) is a free online tool that will enable you to visualize phylogenetic relationships of isolates linked to geographic locations. This tool allows for dynamic visualization of the data with an interactive map using your own phylogenetic tree and metadata.
-   <br/>**Citation:** [Argimón et al., Microb Genom(2016)](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000093).
+
+<br/>**Citation:** [Argimón et al., Microb Genom(2016)](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000093).
 
 ### File formats
 Microreact allows users to upload and visualise their own data, with the user needing only to provide a phylogenetic tree (in .nwk format) and a metadata file (in .csv format). The newick (nwk) file format is a computer readable file produced by most tree-building programs. This text-based file details how to graphically display the relatedness of samples in a phylogenetic tree. To view what the text looks like you can open the file in TextEdit or BBEdit for macOS and notepad for Windows systems.
@@ -31,7 +32,7 @@ More instructions on formatting your metadata can be found in the [guidelines](h
 When you are happy with your metadata sheet, we will now save this file as a CSV file, go to _File_ > _Save as_ > _Select_ ‘**CSV UTF-8 (comma delimited) (.csv)**’ from the drop down menu in '_file format_' then '_Save_'. A dialogue box will appear asking if you are sure you want to save it as csv and some formatting may be lost, don’t worry about this, click ‘**yes**’.  We are now ready to view our data in microreact.
 
 ### Visualising your data in microreact
-In your favourite internet browser, go to the microreact [upload](https://microreact.org/showcase page. Navigate to the folder where you have saved the tree (in _.nwk_ format) and the metadata file (in _.csv_ format). Select both files and drag and drop the files. There will be a check to make sure both files are in the correct format before you can proceed. If you get an error, please check your files again before proceeding. Microreact will also provide you with a list of errors it has detected to help to fix the problem.
+In your favourite internet browser, go to the microreact [upload](https://microreact.org/showcase) page. Navigate to the folder where you have saved the tree (in _.nwk_ format) and the metadata file (in _.csv_ format). Select both files and drag and drop the files. There will be a check to make sure both files are in the correct format before you can proceed. If you get an error, please check your files again before proceeding. Microreact will also provide you with a list of errors it has detected to help to fix the problem.
 Provide a name for your project and a brief description if you like. You may leave the '_project website_' section blank and your email is also optional. Select '_create project_'.
 
 Your project should look something like the picture below. The map panel on the left, the phylogenetic tree on the right panel and the timeline at the bottom. There are many features to microreact and we recommend you watch the microreact [video tutorial](https://microreact.org/introduction) on the full range of functions before proceeding.
