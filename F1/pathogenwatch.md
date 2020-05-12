@@ -27,7 +27,7 @@ In the slack channel, share your answers with other participants.
 You can also explore genome collections of several species in the _'collections'_ tab. Although only a limited number are supported, there is a wealth of information contained here. Navigate to the _Salmonella_ Typhi public genome collection. Click _'view collection'_ (you may need to hover over the area to see the link to _'view collection'_). Here you can view the phylogenetic structure of nearly 5000 strains in the collection. You can choose to browse the data and filter it by a particular characteristic in the data. The most powerful use of the collection data, is the ability to download the metadata and other genotypic information as shown in the image below. Give it a try!
 
 <div class="col-sm-2" style="width: 700px; margin-left: auto; margin-right: auto;">
-   <img src="/img/Image14.png"></img>
+   <img src="img/Image14.png"></img>
 </div>
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)

@@ -6,7 +6,7 @@ Congratulations, you have now reached the end of Fundamental 1. In Fundamental 2
 Many thanks to all those involved in the making on fundamental 1 from providiing feedback on the material to suggestions and refinements.
 
 <div class="col-sm-2" style="width: 700px; margin-left: auto; margin-right: auto;">
-   <img src="/img/t284.jpg"></img>
+   <img src="img/t284.jpg"></img>
 </div>
 <div style="text-align:center">Bentley group, March 2020. &copy; Wellcome Sanger Institute.</div>
 
@@ -18,6 +18,7 @@ Many thanks to all those involved in the making on fundamental 1 from providiing
 </br>**Photographer**: Marc Folland
 </br>**Funding**: The training is provided as part of the [Juno](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/) projects funded by [The Bill and Melinda Gates Foundation](https://www.gatesfoundation.org/).
 
+[Back to the training homepage](https://www.bactgen.sanger.ac.uk)
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
 
