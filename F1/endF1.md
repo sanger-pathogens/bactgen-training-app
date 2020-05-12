@@ -18,7 +18,7 @@ Many thanks to all those involved in the making on fundamental 1 from providiing
 </br>**Photographer**: Marc Folland
 </br>**Funding**: The training is provided as part of the [Juno](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/) projects funded by [The Bill and Melinda Gates Foundation](https://www.gatesfoundation.org/).
 
-[Back to the training homepage](https://www.bactgen.sanger.ac.uk)
+[Back to the training homepage](/)
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
 
