@@ -2,7 +2,7 @@
 <div class="col-sm-2" style="width: 500px; margin-left: auto; margin-right: auto;">
    <img src="/img/training_banner.png"></img>
 
-<h1 style="text-align:center"><span style="color:white; font-size:1.4em">Bioinformatics training for Juno and GPS2 partners</span></h1>
+<h1 style="text-align:center"><span style="color:white; font-size:1.4em">Bioinformatics Training</span></h1>
 
 <h2 style="text-align:center"><span style="color:white; font-size:1em">Training overview</h2></span></h1>
 
