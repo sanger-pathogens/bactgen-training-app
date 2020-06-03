@@ -1,26 +1,20 @@
 <!-- coverpage.md -->
-<div class="col-sm-2" style="width: 500px; margin-left: auto; margin-right: auto;">
-   <img src="/img/training_banner.png"></img>
 
-<h1 style="text-align:center"><span style="color:white; font-size:1.4em">Bioinformatics Training</span></h1>
+<!-- TODO: Add image -->
+<!-- <img src="/img/training_banner.png"></img> -->
 
-<h2 style="text-align:center"><span style="color:white; font-size:1em">Training overview</h2></span></h1>
+# Bioinformatics Training
+## Training overview
 
-<p style="text-align:left">
 This bioinformatics training is offered as part of the [JUNO](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/index.html) global genomic sequencing projects. We have developed several different bioinformatics training modules that will range from 'Fundamental' to 'Advanced' and will be made available as online modules which you can complete in your own pace. Anyone who is interested can undertake the training as the tools we will use are free although in the Advanced 1 module, you will have to install the software on your laptop or desktop computer.
  
 The training will consist of  three online modules designed to be taken in sequence. It is advisable to complete each of the modules before moving on to the next, however each of the modules are designed as stand alone. Please use the link provided to navigate to the respective module.
 
 The modules are as follows:
-1. 	[Fundamental 1 (F1)](/F1/): Using free web tools for visualisation of genomic data. 
-2. 	Fundamental 2 (F2): Using web-based drag & drop tools for genomic analysis and visualisation. 
-3. 	Advanced 1 (A1): Using stand-alone software tools locally run on your computer to analyse and visualise your genomic data.
+1. [Fundamental 1 (F1)](F1/): Using free web tools for visualisation of genomic data. 
+2. [Fundamental 2 (F2)](F2/): Using web-based drag & drop tools for genomic analysis and visualisation. 
+3. [Advanced 1 (A1)](A1/): Using stand-alone software tools locally run on your computer to analyse and visualise your genomic data.
 
 These modules will be rolled out during the course of 2020 and 2021 and the links will be enabled once the modules become available. Please note, anyone can do the training, however the slack channels providing support will be limited to our project partners.
-</p>
 
-</br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
-
-
-<!-- background color -->
-![color](#99c4e9d1)
+&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
