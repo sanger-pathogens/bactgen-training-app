@@ -1,8 +1,12 @@
 <!-- docs/_sidebar.md -->
 
-* [Welcome to the Module](/)
-* [Introduction to phylogenetics](introduction.md)
-* [Microreact](microreact.md)
-* [Phandango](phandango.md)
-* [Pathogenwatch](pathogenwatch.md)
-* [End of module](endF1.md)
+[Home](/)
+
+# [F1](/F1/)
+
+* [Welcome to the Module](/F1/)
+* [Introduction to phylogenetics](/F1/introduction.md)
+* [Microreact](/F1/microreact.md)
+* [Phandango](/F1/phandango.md)
+* [Pathogenwatch](/F1/pathogenwatch.md)
+* [End of module](/F1/endF1.md)
