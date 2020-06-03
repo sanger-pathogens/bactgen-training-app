@@ -10,7 +10,21 @@
   /* --theme-hue: 125; */
   --theme-color: #015798;
 
-  /* Custom cover page */
+  /* base */
+  --base-font-family: 'Inter', sans-serif;
+
+  /* content */
+  --link-text-decoration: none;
+  --link-color: #FF6602;
+  --link-color--hover:#015798;
+
+  /* sidebar */
+  --sidebar-width: 22rem;
+  --sidebar-nav-link-color--hover: #FF6602;
+  --sidebar-nav-link-text-decoration--active: none;
+  --sidebar-nav-link-text-decoration--hover: none;
+
+  /* cover page */
   --cover-max-width: 60em;
   --cover-background-image: none;
   --cover-background-color: #015798;
