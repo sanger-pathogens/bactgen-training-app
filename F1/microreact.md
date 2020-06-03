@@ -15,7 +15,7 @@ The second file you will need as an input for microreact is the metadata file in
 We will first obtain the latitude and longitude using free webtools. There are plenty of ways to get coordinates (e.g. using a simple search on google), however with multiple samples, it is easier to submit this in batches. We will use [localfocus](https://geocode.localfocus.nl/) for this. Copy and paste the ‘address’ column into the box, making sure to Indicate the country to improve search results. Click ‘add to geocoder’. The results should appear in the box below in only a few seconds. Making sure to select the ‘decimals with dots’, you can now copy and paste the coordinates to a spreadsheet. You will notice that some of the geocodes have status ‘doubt’. This can happen. If you are not sure about the address you can confirm other websites e.g. [latlong](https://www.latlong.net/) or google [maps](https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=en). 
  
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="img/Image4.png"></img>
+   <img src="/F1/img/Image4.png"></img>
 </div>
 
 ### Customising your metadata
@@ -26,7 +26,7 @@ Open the metadata.xls file you added the lat/long information into. We will be f
 More instructions on formatting your metadata can be found in the [guidelines](https://microreact.org/instructions) detailed in microreact. Choosing the colours is simple. You can use a website like [colorpicker](https://www.webfx.com/web-design/color-picker/) to obtain the HEX colour codes which all begin with a hash symbol ‘#’ followed by a series of numbers and/or letters. Your metadata table should now look like the figure below.
 
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="img/Image5.png"></img>
+   <img src="/F1/img/Image5.png"></img>
 </div>
 
 When you are happy with your metadata sheet, we will now save this file as a CSV file, go to _File_ > _Save as_ > _Select_ ‘**CSV UTF-8 (comma delimited) (.csv)**’ from the drop down menu in '_file format_' then '_Save_'. A dialogue box will appear asking if you are sure you want to save it as csv and some formatting may be lost, don’t worry about this, click ‘**yes**’.  We are now ready to view our data in microreact.
@@ -38,7 +38,7 @@ Provide a name for your project and a brief description if you like. You may lea
 Your project should look something like the picture below. The map panel on the left, the phylogenetic tree on the right panel and the timeline at the bottom. There are many features to microreact and we recommend you watch the microreact [video tutorial](https://microreact.org/introduction) on the full range of functions before proceeding.
 
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="img/Image6.png"></img>
+   <img src="/F1/img/Image6.png"></img>
 </div>
 
 ### Interpreting the georeferenced data

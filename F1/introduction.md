@@ -16,7 +16,7 @@ Phylogenetic trees based on whole genome data tell us about the relationships of
 
 ---
 <div class="col-sm-2" style="width: 400px; margin-left: auto; margin-right: auto;">
-   <img src="img/Image1.png"></img>
+   <img src="/F1/img/Image1.png"></img>
 </div>
 <div style="text-align: center"><span style="font-size:0.75em">Sketch by Charles Darwin circa 1837. Image source: wikimedia commons</span></div>
 
@@ -29,13 +29,13 @@ Phylogenetic trees are constructed based on mathematical models that apply the n
 Tree interpretation requires us to first know the elements that make up the tree. There are four main characteristics, _**a)**_ the **topology**, describes the shape of the tree, _**b)**_ the **branches**, describe the genetic change between samples and lastly _**c)**_ the **nodes**, the points at the end of branches (<span style="color:red">red</span>) which can be at the root (<span style="color:orange">orange</span>), internal (<span style="color:blue">blue</span>) or the tip or leaf (<span style="color:purple">purple</span>). You may sometimes see numbers on the nodes of trees, these are the bootstrap values that denote the confidence or accuracy of  the tree.
 
 <div class="col-sm-2" style="width: 400px; margin-left: auto; margin-right: auto;">
-   <img src="img/Image2.png"></img>
+   <img src="/F1/img/Image2.png"></img>
 </div>
 
 The root of the tree represents the ancestral strain and the tips or leaves are the descendants. The same topology tree can be drawn in different ways with the most popular formats being rectangular, radial and circular. Choosing the format is down to you and how the type of tree you choose best represents your data. For example when you have few samples it may suit to draw a rectangular tree, but when you have hundreds or even thousands, maybe a radial tree would be a better choice.
 
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="img/Image3.png"></img>
+   <img src="/F1/img/Image3.png"></img>
 </div>
 
 When reading the tree, the vertical distance in a rectangular tree doesn't mean anything and the nodes can be freely rotated. It is the branch length (horizontal distance) that will link the rectangular tree to the other type of tree hence the type of tree can be altered without altering the information describing the evolutionary relationship between the different taxa or samples.

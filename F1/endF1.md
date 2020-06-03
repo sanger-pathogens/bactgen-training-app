@@ -6,7 +6,7 @@ Congratulations, you have now reached the end of Fundamental 1. In Fundamental 2
 Many thanks to all those involved in the making on fundamental 1 from providiing feedback on the material to suggestions and refinements.
 
 <div class="col-sm-2" style="width: 700px; margin-left: auto; margin-right: auto;">
-   <img src="img/t284.jpg"></img>
+   <img src="/F1/img/t284.jpg"></img>
 </div>
 <div style="text-align:center">Bentley group, March 2020. &copy; Wellcome Sanger Institute.</div>
 

@@ -12,3 +12,6 @@ To add or change content, edit the markdown files.
 Styling is largely managed by [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/). If you want to change something, please check the [available customisations](https://jhildenbiddle.github.io/docsify-themeable/#/customization) and add an appropriate override in the `index.html` file (under the `:root` style tag).
 
 Try to avoid embedding HTML in the markdown files if possible.
+
+### References
+All references, in links and images, should be relative to the project root, eg. `/F1/microreact.md`.

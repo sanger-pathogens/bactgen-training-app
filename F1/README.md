@@ -1,5 +1,5 @@
 <div class="col-sm-2" style="width: 500px; margin-left: auto; margin-right: auto;">
-   <img src="img/Landimg.png"></img>
+   <img src="/F1/img/Landimg.png"></img>
 </div>
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.70em">Welcome to Fundamental 1</span></h1>
 
