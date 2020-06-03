@@ -1,5 +1,9 @@
 <!-- docs/_sidebar.md -->
 
+[Home](/)
+
+# [F1](/F1/)
+
 * [Welcome to the Module](/F1/)
 * [Introduction to phylogenetics](/F1/introduction.md)
 * [Microreact](/F1/microreact.md)
