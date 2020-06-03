@@ -8,8 +8,13 @@
 
 ![logo](/img/training_banner.png)
 
+<div style="text-align: center">
+
 # Bioinformatics Training
-## Training overview
+
+<h2 style="font-size: 1.5rem">Training overview</h2>
+
+</div>
 
 This bioinformatics training is offered as part of the [JUNO](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/index.html) global genomic sequencing projects. We have developed several different bioinformatics training modules that will range from 'Fundamental' to 'Advanced' and will be made available as online modules which you can complete in your own pace. Anyone who is interested can undertake the training as the tools we will use are free although in the Advanced 1 module, you will have to install the software on your laptop or desktop computer.
  
