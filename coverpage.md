@@ -2,6 +2,11 @@
 
 <!-- TODO: Add image -->
 <!-- <img src="/img/training_banner.png"></img> -->
+<!-- <div align=center>
+<img width="200" src="/img/training_banner.png"/>
+</div> -->
+
+![logo](/img/training_banner.png)
 
 # Bioinformatics Training
 ## Training overview

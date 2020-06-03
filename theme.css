@@ -1,0 +1,22 @@
+/*
+ * See customization section of docsify-themeable:
+ * https://jhildenbiddle.github.io/docsify-themeable/#/customization
+ */
+:root {
+  /* Reduce the font size */
+  --base-font-size: 14px;
+
+  /* Change the theme color hue */
+  /* --theme-hue: 125; */
+  --theme-color: #015798;
+
+  /* Custom cover page */
+  --cover-max-width: 60em;
+  --cover-background-image: none;
+  --cover-background-color: #015798;
+  --cover-color: white;
+  --cover-link-color: #FF6602;
+  --cover-link-text-decoration: none;
+  --cover-text-align: left;
+  
+}
