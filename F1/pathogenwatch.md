@@ -3,7 +3,7 @@
 [Pathogenwatch](https://pathogen.watch/) watch is an interactive online tool that analyses your whole genome (WGS) data and provides a visual output. However, in this module, we will only focus on using existing genomes on the platform to explore and download publicly available genomes.
 
 ### Browsing genomes
-To beggin, watch the video below. The time stamp you need is till 0:00 to 0:54 where you will learn to select sequences of interest. We will cover the latter half of the video in F2.
+To begin, watch the video below. The time stamp you need is till 0:00 to 0:54 where you will learn to select sequences of interest. We will cover the latter half of the video in F2.
 
 <div class ="videoWrapper">
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8bDuZZ3hXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

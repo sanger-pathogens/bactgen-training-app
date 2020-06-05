@@ -6,9 +6,10 @@
 <img width="200" src="/img/training_banner.png"/>
 </div> -->
 
-![logo](/img/training_banner.png)
 
 <div style="text-align: center">
+
+![logo](/img/training_banner.png)
 
 # Bioinformatics Training
 
