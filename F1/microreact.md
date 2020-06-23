@@ -50,7 +50,7 @@ Your project should look something like the picture below. The map panel on the 
 ### Interpreting the georeferenced data
 Once you have customised your visual display of the data we can now start to infer the relationship between the samples. Taking a closer look at the tree. How many groups can you see? To help you, you can try looking at the different tree layouts from the tree control toggle. Please watch the microreact [instructional video](https://microreact.org/introduction) for where to find this.
 
-If your answer is 5, then you are correct. These groups are often referred to as ‘clades’ and are separated by where the tree branches. Is there anything unique about Stm8 and Stm10 that belong to their own clade? **Hint**: look at the dates these samples were isolated. Although we cannot definitely say that the collection dates are the sole reason they are in their own clade, we can postulate that because they were collected from the same location about a month apart, separate from any of the other 5 institutes, could indicate these were separate events from the others.
+If your answer is 2, then you are correct. These groups are often referred to as ‘clades’ and are separated by where the tree branches. Is there anything unique about the two clades?  **Hint**: look for any these dates and places where samples were isolated. 
 
 Without knowing the biology of the bacteria you are looking at, or the scenario they were collected in, you can only make very vague assumptions that would not stand up to scrutiny.  If we now had information that these samples were collected from hospital patients who displayed symptoms of diarrhoea and belonged to a species known to spread through the fecal-oral route. Would your interpretation change? 
 
