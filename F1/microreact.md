@@ -44,7 +44,7 @@ Provide a name for your project and a brief description if you like. You may lea
 Your project should look something like the picture below. The map panel on the left, the phylogenetic tree on the right panel and the timeline at the bottom. There are many features to microreact and we recommend you watch the microreact [video tutorial](https://microreact.org/introduction) on the full range of functions before proceeding.
 
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="/F1/img/Image6.png"></img>
+   <img src="/F1/img/Image6_v2.png"></img>
 </div>
 
 ### Interpreting the georeferenced data
@@ -55,6 +55,6 @@ If your answer is 2, then you are correct. These groups are often referred to as
 Without knowing the biology of the bacteria you are looking at, or the scenario they were collected in, you can only make very vague assumptions that would not stand up to scrutiny.  If we now had information that these samples were collected from hospital patients who displayed symptoms of diarrhoea and belonged to a species known to spread through the fecal-oral route. Would your interpretation change? 
 
 >**<span style="color:#FC8E22; font-size:1.5em">Question 1</span>** 
-<br/>In the F1 slack group, comment on how you would interpret what you think is going on with clade 3 given that you only have the above information? When answering, think about where these samples were isolated and the dates when they were collected?
+<br/>In the F1 slack group, comment on how you would interpret what you think is going between the two clades given that you only have the above information? When answering, think about where these samples were isolated and the dates when they were collected?
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
