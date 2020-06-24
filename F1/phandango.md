@@ -32,7 +32,7 @@ Another useful piece of information to display is the key. To display the key, p
 When you are ready to save the image you can either take a screenshot or press _'p'_ on your keyboard. This will download an SVG file. This is a scalable vector graphic that allows users to expand and shrink the image without losing the quality. SVG files can be opened in the browser, simply by clicking it (whereby you can take a screenshot) or you can use a free software such as [imagemagick](http://www.imagemagick.org/script/index.php) to convert the SVG file to PDF or PNG. For the more experienced users you can use an image editing program like [Inkscape](https://inkscape.org/) (which is free) or Adobe Illustrator. More on saving phandango data displays can be found [here](https://github.com/jameshadfield/phandango/wiki/FAQ#screenshots).
 
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="/F1/img/Image10.png"></img>
+   <img src="/F1/img/Image10_v2.png"></img>
 </div>
 
 ### Visualising grouped data
@@ -46,7 +46,7 @@ We are going to format the table to visualise the AMR data. The resistance profi
 Save the resistance metadata as a CSV file as you did before. Selecting your newly saved CSV file and the F1_tree.nwk  tree file, drag and drop them onto the landing page of phandango.
 
 <div class="col-sm-2" style="width: 600px; margin-left: auto; margin-right: auto;">
-   <img src="/F1/img/Image12.png"></img>
+   <img src="/F1/img/Image12_v2.png"></img>
 </div>
 
 You can now see the relationship of the samples and their resistance profile. The blue colour indicates sensitivity and the orange are resistant. Comparing the genetic relationship of the isolates and the resistance profiles, you can see that some of the isolates that are grouped in the tree have similar grouping in the resistance profile. 
@@ -59,7 +59,7 @@ Try combining the resistance data with the metadata. Can you start to postulate 
 You may also choose to view the newly combined metadata table in microreact making sure to edit the column headers to the acceptable format outlined by microreact.
 
 <div class="col-sm-2" style="width: 700px; margin-left: auto; margin-right: auto;">
-   <img src="/F1/img/Image13.png"></img>
+   <img src="/F1/img/Image13_v2.png"></img>
 </div>
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
