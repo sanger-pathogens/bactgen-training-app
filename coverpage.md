@@ -17,7 +17,7 @@
 
 </div>
 
-This bioinformatics training is offered as part of the [JUNO](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/index.html) global genomic sequencing projects. We have developed several different bioinformatics training modules that will range from 'Fundamental' to 'Advanced' and will be made available as online modules which you can complete in your own pace. Anyone who is interested can undertake the training as the tools we will use are free although in the Advanced 1 module, you will have to install the software on your laptop or desktop computer.
+This bioinformatics training is offered as part of the [JUNO](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/index.html) global genomic sequencing projects conducted by the [Bentley Group](https://bentleygroup.sanger.ac.uk/). We have developed several different bioinformatics training modules that will range from 'Fundamental' to 'Advanced' and will be made available as online modules which you can complete in your own pace. Anyone who is interested can undertake the training as the tools we will use are free although in the Advanced 1 module, you will have to install the software on your laptop or desktop computer.
  
 The training will consist of  three online modules designed to be taken in sequence. It is advisable to complete each of the modules before moving on to the next, however each of the modules are designed as stand alone. Please use the link provided to navigate to the respective module.
 
