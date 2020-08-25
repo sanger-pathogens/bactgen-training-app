@@ -62,4 +62,13 @@ You may also choose to view the newly combined metadata table in microreact maki
    <img src="/F1/img/Image13_v2.png"></img>
 </div>
 
+### More tips for using Phandango
+
+Watch the following video by one of our educators, Stephanie W. Lo. In it she shows you what you can do with phandango with different input data types. This is especially useful if you frequently generate recombination data.
+
+<div class ="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pGgtt2z8sUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
