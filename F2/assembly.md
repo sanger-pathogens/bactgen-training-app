@@ -20,7 +20,7 @@ Once the process is complete you can select “view genomes” (Figure 7) to see
 ![alt_text](img/figure7.png "Complete analysis")
 **Figure 7: Completed analysis of the sequence data**
 
-Now select the isolate you just uploaded (21999_7#106) (circle 1, Figure 8) and click on the “selected genomes” tab on the top-right corner (circle2, Figure 8). In order to access the assembly statistics data click on the option “Download file”(circle3, Figure 8).
+Now select the isolate you just uploaded (21999_7#106) (circle1, Figure 8) and click on the “selected genomes” tab on the top-right corner (circle2, Figure 8). In order to access the assembly statistics data click on the option “Download file”(circle3, Figure 8).
 
 ![alt_text](img/figure8.png "Accessing results")
 **Figure 8. Accessing the analysis results**
