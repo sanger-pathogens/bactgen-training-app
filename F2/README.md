@@ -14,7 +14,7 @@ Approximately 3 hours.
 Please find the required files for this module here.
 
 ## Support
-There is a Slack channel available for you to ask questions and discuss your thoughts. From date1 to date2 there will be members of the core GPS and Juno project teams available to answer your questions. Access to the Slack channel is only available for GPS and Juno project partners. If you are not involved in either project, you are welcome to use the training materials, however no support will be provided. We will have a ‘wrap-up’ session via a webinar on 27th April to address any outstanding questions; please fill in the short questionnaire at the end of the module to let us know of any questions or topics that you would like to hear more about.
+There is a Slack channel available for you to ask questions and discuss your thoughts. From 4th April to 27th April there will be members of the core GPS and Juno project teams available to answer your questions. Access to the Slack channel is only available for GPS and Juno project partners. If you are not involved in either project, you are welcome to use the training materials, however no support will be provided. We will have a ‘wrap-up’ session via a webinar on 27th April to address any outstanding questions; please fill in the short questionnaire at the end of the module to let us know of any questions or topics that you would like to hear more about.
 
 >**Educators**
 <br/>Narender Kumar, Kate Mellor, Stephanie W. Lo, Victoria Carr, Uzma Khan, Jolynne Mokaya, Ana Ferreira, Gemma Murray.
