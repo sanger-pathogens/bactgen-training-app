@@ -11,7 +11,7 @@ We will then introduce you to genotyping which involves characterising bacterial
 Approximately 3 hours.
 
 ## Files for this module
-Please find the required files for this module here.
+Please find the required files for this module [here](https://github.com/sanger-pathogens/bactgen-training-app/releases/download/v0.1.13-data/F2_Training_Data.zip).
 
 ## Support
 There is a Slack channel available for you to ask questions and discuss your thoughts. From 4th April to 27th April there will be members of the core GPS and Juno project teams available to answer your questions. Access to the Slack channel is only available for GPS and Juno project partners. If you are not involved in either project, you are welcome to use the training materials, however no support will be provided. We will have a ‘wrap-up’ session via a webinar on 27th April to address any outstanding questions; please fill in the short questionnaire at the end of the module to let us know of any questions or topics that you would like to hear more about.
