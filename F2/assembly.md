@@ -10,29 +10,44 @@ In this section we will perform assembly of _S. pneumoniae_ isolate (21999_7#106
 
 Firstly, navigate to the [Pathogenwatch website](https://pathogen.watch/). Then click on the 'upload' button on the Pathogenwatch home dashboard (Figure 6). You will then be required to sign in.
 
-![alt_text](img/figure6.png "Pathogenwatch")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure6.png"></img>
+</div>
+
 **Figure 6: Landing page of Pathogenwatch website**
 
 You can then upload your fastq data. We recommend that you watch the Pathogenwatch video ([sequence assembly](https://training.bactgen.sanger.ac.uk/#/F1/pathogenwatch), time stamp 0:54 onwards) to learn how to upload your reads and assemble the contigs.
 
 Once the process is complete you can select “view genomes” (Figure 7) to see a tabulated summary of the uploaded genomes as shown in Figure 8.
 
-![alt_text](img/figure7.png "Complete analysis")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure7.png"></img>
+</div>
+
 **Figure 7: Completed analysis of the sequence data**
 
 Now select the isolate you just uploaded (21999_7#106) (circle1, Figure 8) and click on the “selected genomes” tab on the top-right corner (circle2, Figure 8). In order to access the assembly statistics data click on the option “Download file”(circle3, Figure 8).
 
-![alt_text](img/figure8.png "Accessing results")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure8.png"></img>
+</div>
+
 **Figure 8. Accessing the analysis results**
 
 This will open another small window (Figure 9) with many features about the isolate that Pathogenwatch has identified from the sequence reads. In order to access the assembly statistics select the “stats” option (circle1, Figure 9) and save the resulting .csv file on your computer.
 
-![alt_text](img/figure9.png "Downloading the assembly statistics")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure9.png"></img>
+</div>
+
 **Figure 9: Downloading the assembly statistics**
 
 Open the .csv file you just downloaded, and you will see the assembly statistics as shown in Figure 10. Important metrics which can reflect on the quality of the assembly are highlighted by red boxes in the Figure 10.
 
-![alt_text](img/figure10.png "Assembly statistics of the sequence data")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure10.png"></img>
+</div>
+
 **Figure 10: Assembly statistics of the sequence data**
 
 A good assembly is categorised as those having a number of contigs &lt;500, total length of the assembled sequences is within a certain range and GC% that matched the species of our interest. For _S. pneumoniae_ the assembled length (genome length) should be between 1.9 -2.3 MB. Since the example used here is of _S. pneumoniae_ and the number of contigs is &lt;500, the total length is between 1.9 - 2.3 MB and the GC% is between 38.5 - 40.0, the contigs assembled are good and can be used for further downstream analysis. Higher number of contigs (>500) could also indicate possible contamination of the sequence reads. Additionally, having assembled genome size lower than the threshold could indicate lower overall sequencing coverage or throughput while higher genome size could indicate contamination.  

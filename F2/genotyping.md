@@ -7,7 +7,9 @@ Genotyping is characterisation of bacteria based on genetic content, this enable
 
 Determining the species is a crucial first step in your analysis. Species identification using the 16S rRNA gene sequence has been a common method, as 16S rRNA genes are ubiquitous in bacteria and are highly conserved. However, the 16S rRNA represents a very small fraction of the genome and comparing the whole genome sequence data to a reference database of known bacterial species can be more informative than 16S typing. To reduce the computational effort, the reads or contigs can be divided into small pieces, termed _k_-mers. A _k_-mer is a contiguous sequence of _k_ bases, where _k_ can be any positive integer so _7_-mer is a sequence that is 7 bases long. Tools can break the sequence of your isolate of unknown bacterial species into _k_-mers and compare these _k_-mers with a curated database of _k_-mers from known bacterial species. Genome sequences that share a high percentage similarity share a high percentage of _k_-mers. In the practical section of this module we will be using the species assignment tool within Pathogenwatch called [Speciator](https://cgps.gitbook.io/pathogenwatch/technical-descriptions/species-assignment/speciator).
 
-![alt_text](img/figure11.png "Species Identification")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure11.png"></img>
+</div>
 
 **Figure 11. Illustration of species identification of an unknown genome, using a _k_-mer based approach to query a database of _k_-mers from known bacterial species.**
 
@@ -16,7 +18,9 @@ Determining the species is a crucial first step in your analysis. Species identi
 
 MLST is a commonly used sequence-based method to type bacterial species. There are publicly available MLST schemes for over 100 bacterial species including _S. pneumoniae_ and _S. agalactiae_. The schemes are typically based upon the sequences of internal fragments of seven house-keeping genes which are present in almost all strains of the species. There is a database of variants of these genes, termed alleles, which are each given a number.  The combination of alleles of your isolate determines the overall sequence type “ST” code (Figure 12).
 
-![alt_text](img/figure12.png "MLST Typing")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure12.png"></img>
+</div>
 
 **Figure 12. Illustration of MLST typing. Each gene is indicated with a number denoting its allelic variant. The combination of numbers (profile) determines the sequence type.**
 
@@ -45,7 +49,9 @@ Nucleotide variation across the whole-genome can be used to cluster isolates int
 
 A tool called [PopPUNK](https://poppunk.net/) has been created to efficiently assign isolates to clusters. PopPUNK stands for Population Partitioning Using Nucleotide _k_-mers. This tool does not require alignments or annotations, or even assemblies. PopPUNK breaks the sequence data into _k_-mers, and compares _k_-mers between the samples to cluster isolates using machine learning methods. Clusters are defined by a network which is drawn by how similar the core and accessory distances isolates are to one another; the connected components in the network become the PopPUNK clusters (Figure 13). This network can be used to generate a database which enables you to assign additional genomes to clusters, without having to re-run clustering on a large number of genomes. The names of clusters do not change as new isolates are added in this way, meaning studies can easily be compared.  
 
-![alt_text](img/figure13.png "Lineage assignment")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure13.png"></img>
+</div>
 
 **Figure 13. Illustration of the concept of assignment of new strains to clusters using PopPUNK**
 
@@ -66,7 +72,9 @@ We are going to use data for 10 _S. pneumoniae_ isolates from Brazil. These isol
 2. Upload your data. Pathogenwatch accepts multiple data upload options. We have provided you with single genome FASTAs for genotyping, so select the ‘Single Genome FASTAs’ option
 3. Now you need to drag and drop the ten FASTA files on the webpage. Your genome data will automatically upload and be processed, as occurred when you uploaded FastQ files but this time no assembly is required. When the processing is complete you will see completed concentric circles, similar to Figure 14. You can now click on ‘VIEW GENOMES’ in the centre of the circle to view your results.
 
-![alt_text](img/figure14.png "Completion of genotyping")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure14.png"></img>
+</div>
 
 **Figure 14. Completion of genotyping processing by Pathogenwatch**
 
@@ -76,11 +84,15 @@ a. **Isolate reports.** You can now see a row for each genome. You can click on 
 
 b. **Using filters.** If you upload many genomes you may want to filter the genomes based on characteristics such as AMR or MLST.
 
-![alt_text](img/figure15.png "Isolate")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure15.png"></img>
+</div>
 
 **Figure 15. Click on the name of an individual isolate (e.g. 21127_2#16, highlighted by the green box) to view the full report.**
 
-![alt_text](img/figure16.png "Overall Report")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure16.png"></img>
+</div>
 
 **Figure 16. Example of an isolate report from Pathogenwatch**
 
@@ -110,7 +122,9 @@ Metadata is a crucial data in interpretation of sequence data. It is imperative 
 
 With most analysis programs that ask you to input metadata, they would ask it in the form of a CSV, TSV or TXT file. These are simple text files (commonly termed flat files) that contain tabular information (Figure 17). The file types are named by the type of delimiter or separator they use. CSV uses a comma, hence its called a Comma Separated Value file, a TST is a Tab Separated Value file, and values in a TXT or text file are separated by spaces. You can use software such as Excel to export this type of table and the suffix will be denoted as file.csv, file.tsv or file.txt. **Note:** for Excel tab delimited files are as saved as .txt and space delimiters are saved as .prn).
 
-![alt_text](img/figure17.png "Examples of common metadata file types")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/figure17.png"></img>
+</div>
 
 **Figure 17. Examples of common metadata file types**
 
@@ -136,7 +150,9 @@ b. **Explore your data**
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Are there common patterns of AMR?
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Do isolates of the same serotype and/or strain have the same AMR profile?
 
-![alt_text](img/new_microreact.png "New microreact")
+<div class="col-sm-2" style="width: 600px;">
+   <img src="/F2/img/new_microreact.png"></img>
+</div>
 
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
