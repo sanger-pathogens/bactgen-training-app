@@ -120,7 +120,7 @@ d. **Strain (PopPUNK)**
 
 Metadata is a crucial data in interpretation of sequence data. It is imperative that before you embark on a sequencing project, you have a hypothesis and that you collect the relevant metadata that will accompany WGS data.
 
-With most analysis programs that ask you to input metadata, they would ask it in the form of a CSV, TSV or TXT file. These are simple text files (commonly termed flat files) that contain tabular information (Figure 17). The file types are named by the type of delimiter or separator they use. CSV uses a comma, hence its called a Comma Separated Value file, a TST is a Tab Separated Value file, and values in a TXT or text file are separated by spaces. You can use software such as Excel to export this type of table and the suffix will be denoted as file.csv, file.tsv or file.txt. **Note:** for Excel tab delimited files are as saved as .txt and space delimiters are saved as .prn).
+With most analysis programs that ask you to input metadata, they would ask it in the form of a CSV, TSV or TXT file. These are simple text files (commonly termed flat files) that contain tabular information (Figure 17). The file types are named by the type of delimiter or separator they use. CSV uses a comma, hence its called a Comma Separated Value file, a TSV is a Tab Separated Value file, and values in a TXT or text file are separated by spaces. You can use software such as Excel to export this type of table and the suffix will be denoted as file.csv, file.tsv or file.txt. **Note:** for Excel tab delimited files are as saved as .txt and space delimiters are saved as .prn).
 
 <div class="col-sm-2" style="width: 600px;">
    <img src="/F2/img/figure17.png"></img>

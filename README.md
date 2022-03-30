@@ -15,3 +15,20 @@ Try to avoid embedding HTML in the markdown files if possible.
 
 ### References
 All references, in links and images, should be relative to the project root, eg. `/F1/microreact.md`.
+
+### Deployment
+Build image:
+```
+cd bactgen-training-app
+docker build -t <docker user>/bactgen-training-app:<version> .
+```
+
+Push image:
+```
+docker push <docker user>/bactgen-training-app:<version>
+```
+
+Deploy the website to the server (you must have ssh access to the host address):
+```
+./deploy.sh <version> <remote user> <deployment host address> <docker user>
+```
