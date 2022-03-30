@@ -25,10 +25,4 @@ There is a Slack channel available for you to ask questions and discuss your tho
 >**Funding**
 <br/>The training is provided as part of the[ Juno](https://www.gbsgen.net/) and[ GPS2](https://www.pneumogen.net/gps/) projects funded by[ The Bill and Melinda Gates Foundation](https://www.gatesfoundation.org/).
 
->**Educators**
-<br/>Christine Boinett (Lead educator), Stephanie W. Lo, Dorota Jamrozy and Stephen Bentley.
-
->**Contributors**
-<br/>Christine Boinett, Gareth Peat, Stephanie W. Lo, Dorota Jamrozy, Neil MacAlasdair, Kate Baker and Stephen Bentley.
-
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
