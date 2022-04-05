@@ -18,6 +18,6 @@ Many thanks to all those involved in the making of Fundamental 2 from providing 
 <br/>Narender Kumar, Kate Mellor, Christine Boinett, Victoria Carr, Nil Shchelov, Jolynne Mokaya, Ana Ferreira, John Lees, Stephanie W. Lo, Stephen Bentley, members of the [Bentley Group](https://bentleygroup.sanger.ac.uk/#team), members of the [Centre for Genomic Pathogen Surveillance](https://www.pathogensurveillance.net/) and members of the [Pathogen Informatics team](https://www.sanger.ac.uk/science/groups/pathogen-informatics).
 
 **Funding**
-<br/>The training is provided as part of the [Juno](https://www.gbsgen.net/) and[ GPS2](https://www.pneumogen.net/gps/) projects funded by [The Bill and Melinda Gates Foundation](https://www.gatesfoundation.org/).
+<br/>The training is provided as part of the [JUNO](https://www.gbsgen.net/) and [GPS2](https://www.pneumogen.net/gps/) projects funded by [The Bill and Melinda Gates Foundation](https://www.gatesfoundation.org/).
 
 </br>&copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
