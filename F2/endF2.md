@@ -6,7 +6,7 @@ Please complete this short [Google Form](https://docs.google.com/forms/d/1mjLhb3
 
 # Acknowledgements
 
-Many thanks to all those involved in the making of Fundamental 2 from providing feedback on the material and their helpful suggestions and refinements.
+Many thanks to all those involved in the making of Fundamental 2 for providing feedback on the material and their helpful suggestions and refinements.
 
 **Programme Lead**
 <br/>Prof. Stephen Bentley
