@@ -18,7 +18,7 @@ All references, in links and images, should be relative to the project root, eg.
 
 ## Deploying website update script
 
-The live website is updated with the `docker_deploy.sh` script.  If this has been changed (or if in doubt) deplot it to the server.
+The live website is updated with the `docker_deploy.sh` script.  If this has been changed (or if in doubt) deploy it to the server.
 
 ```
 ./deploy.sh <remote user> <deployment host address>
