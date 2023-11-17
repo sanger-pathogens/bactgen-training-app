@@ -5,7 +5,7 @@ Phylogenetic tree based on whole genome data tell us about the relationships of 
 
 
 **Data files**
-<br/>We have provided data files required for this module, available for download [here](ftp://ftp.sanger.ac.uk/pub/pathogens/bactGen_training/f1/).
+<br/>We have provided data files required for this module, available for download [here](https://github.com/sanger-pathogens/bactgen-training-app/releases/download/v0.1.20-data/F1_Training_Data.zip).
 
 **Slack channel**
 <br/>Throughout the module, there will be questions referring you to answer or comment on the slack channel. Please note that this is a private slack channel and access is only for Juno and GPS2 project partners. If you are not part of these projects, you are more than welcome to undertake the modules, however there will be no support.
