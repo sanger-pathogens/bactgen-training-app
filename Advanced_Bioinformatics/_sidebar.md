@@ -13,3 +13,4 @@ Part 2 - Genomic Data Analysis
  * [NGS Data Quality Control](/Advanced_Bioinformatics/ngs_data_qc.md)
  * [Adapter Trimming](/Advanced_Bioinformatics/adapter_trimming.md)
  * [Taxonomy Classification](/Advanced_Bioinformatics/taxonomy_classification.md)
+ * [*De novo* assembly](/Advanced_Bioinformatics/de_novo_assembly.md)
