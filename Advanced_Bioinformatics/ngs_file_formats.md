@@ -4,13 +4,13 @@
 
 The information of biological sequences (nucleotides and amino acids) is stored in various file formats for easy access and analysis. Some of these files are in human-readable (text) format and others are in machine-readable (binary) format.
 
-## FASTA files
+## FASTA Files
 
 Fasta file is a text file which consists of a single and multiple sequences. Though it is not mandatory, FASTA files generally have an extension of **.fa**, **.fas**, **.fsa**, **.fna** or **.fasta**. Each sequence has a one-line header, starting with the `>`, followed by the nucleotide (or amino acid) sequence. This sequence can be in a single line or span across multiple lines.
 
 ![FASTA Content](/img/fasta_content.png "FASTA Content")
 
-## FASTQ files
+## FASTQ Files
 
 This section is also described in the [F2 module](F2/)
 
@@ -37,7 +37,7 @@ Most often, paired-end data is stored in two files and they have `R1` and `R2` i
 
 Sometimes paired-end data is saved in interleaved FASTQ format, storing forward and reverse reads sequentially in a single file.
 
-### Phred score
+### Phred Score
 
 A quality score (PHRED scale) for each base pair. It indicates how confident we can be that the base was sequenced and identified correctly. 
 
@@ -61,7 +61,7 @@ The table depicts the error rate seen in the sequencing as per the Phred score. 
 
 ![Quality Score](/img/q_score.png "Quality Score")
 
-## Sequence Alignment Map (SAM) format
+## Sequence Alignment Map (SAM) Format
 
 The sequence alignment map (SAM) format is a tab-delimited text file format developed to store read mapping. Every SAM file has two sections:
 
@@ -123,18 +123,18 @@ For example, Flag `99` (Binary: `000001100011`) codes for
 
 This is the only combination that gives the total of `99`
 
-## Binary Alignment Map (BAM) format
+## Binary Alignment Map (BAM) Format
 
 Binary Alignment Map (BAM) is a compressed SAM file. It is compressed using the BGZF compression method.
 
-## CRAM files
+## CRAM Files
 
 CRAM files are also compressed SAM files, designed by the EBI to reduce the storage space. CRAM files compression is based on the reference the data is aligned to.
 
 Data is compressed using one of the general purpose compressors (gzip, bzip2). CRAM records are compressed using several different encoding strategies. For example, bases are reference compressed by encoding base differences rather than storing the abses themselves. External reference sequences introduce the only external dependency into the CRAM format. When external reference sequences cannot be conveniently used the reference sequences also can be embedded within the CRAM files. However, when embedded reference sequences are used then only those reference sequence regions are preserved in CRAM that has reads aligned against them.
 
 
-## Genbank format
+## Genbank Format
 
 The Genbank format allows systematic storage of information about the sequence. An example of the GenBank file can be accessed [here](https://www.ncbi.nlm.nih.gov/nuccore/X81322) (adapted from [FutureLearn](https://www.futurelearn.com/info/courses/bacterial-genomes-bioinformatics/0/steps/47012)). 
 
@@ -144,7 +144,7 @@ A typical Genbank file has two parts:
 
 ![GenBank Content](/img/genbank_content.png "GenBank Content")
 
-## GFF3 format
+## GFF3 Format
 
 GFF3 stands for gene feature file version 3. This is a tab-delimited file containing all the information that can be associated with a DNA or protein sequence. An example can be seen in the below figure.
 
@@ -159,7 +159,7 @@ The file contains 9 fields:
 - **Phase** - describes the reading frame relative to the reference where the featire begins. It has values 0, 1 and 2 for indicating number of based from the beginning where the first codon on the feature begins
 - **Attributes** - provides additional information about each feature
 
-## Further reading
+## Further Reading
 
 SAM format:
 - https://www.samformat.info/sam-format-flag

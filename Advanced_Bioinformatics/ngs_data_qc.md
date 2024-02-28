@@ -181,9 +181,9 @@ In a properly diverse library, most sequences should fall into the far left of t
 
 The module also calculates an expected overall loss of sequence were the library to be duplicated. This headline figure is shown at the top of the plot and gives a reasonable impression of the potential overall level of loss.
  
-### Overrepresented sequences
+### Overrepresented Sequences
 
-![FastQC Overrepresented sequences](/img/fastqc_16.png "FastQC Overrepresented sequences")
+![FastQC Overrepresented Sequences](/img/fastqc_16.png "FastQC Overrepresented Sequences")
 
 A normal high-throughput library will contain a diverse set of sequences, with no individual sequence making up a tiny fraction of the whole. Finding that a single sequence is very over-represented in the set either means that it is highly biologically significant, or indicates that the library is contaminated , or not as diverse as you expected.
 

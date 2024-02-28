@@ -1,10 +1,10 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Tools</span></h1>
 
-## Bioinformatics tools
+## Bioinformatics Tools
 
 Before we list the bioinformatics tools required to analyse genomic data, we will first need to understand various software management applications that we would need to run these tools.
 
-## Software management applications
+## Software Management Applications
 
 Software management applications are indispensable tools in bioinformatics because they simplify software management, enhance reproducibility, support collaboration, and provide the flexibility needed to tackle the complex and dynamic nature of biological data analysis. These tools contribute to the efficiency and rigor of bioinformatics research and analysis workflows. Here, we will provide an overview of two software management applications, i.e., Docker and Conda.
 
@@ -14,7 +14,7 @@ Software management applications are indispensable tools in bioinformatics becau
 
      Docker is an open platform for developing, shipping, and running applications. It provides the ability to package and run an application in a loosely isolated environment called a container. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host; i.e., it involves bundling an application together with all of the necessary configuration files, libraries, and dependencies to ensure the software can run in a reproducible fashion across a diversity of computing environments. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.
 
-- **Docker architecture**
+- **Docker Architecture**
 
     Installing and running docker is dependent on the computer's operating system. We will define some key concepts that you will come across when installing and running docker.
 
@@ -37,7 +37,7 @@ Software management applications are indispensable tools in bioinformatics becau
 
   ![Docker Virualisation](/img/docker_virualisation.png "Docker Virualisation")
 
-- **How to install Docker**
+- **Installing Docker**
 
   a. **Steps to install Docker on macOS:**
 
@@ -197,7 +197,7 @@ Software management applications are indispensable tools in bioinformatics becau
         echo 'function docker_run() { docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@" ;}' >> ~/.zshrc
         ```
 
-- **Docker images/Bioinformatics tools**
+- **Docker Images / Bioinformatics Tools**
 
     We will use various bioinformatics tools in this course, and the table below shows a list of tools required for this course. These tools can be accessed and executed using Docker platform.
 
@@ -242,7 +242,7 @@ Software management applications are indispensable tools in bioinformatics becau
 
     - **Conda environment:** A Conda environment is a self-contained directory that contains a specific collection of Python (or other programming language) packages and their dependencies. Environments allow you to manage and isolate different sets of packages, ensuring that your projects have the specific dependencies they need without interfering with each other.
 
-- **Steps to install Anaconda / Miniconda:**
+- **Installing Anaconda / Miniconda:**
 
   1. **Download:**
 

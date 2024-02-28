@@ -28,7 +28,7 @@ Outside this course, the choice of computing platform can be selected based on a
     <img width="80%" alt="Computer types" src="/Advanced_Bioinformatics/img/computer_type.png">
 </div>
 
-## Operating systems
+## Operating Systems
 
 An operating system (OS) is a fundamental software component that manages and controls a computer's hardware resources and provides a foundation for running applications. It serves as an intermediary between the hardware and software, allowing users and applications to interact with and utilize the computer's resources effectively.
 
