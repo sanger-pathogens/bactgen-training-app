@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">NGS Data Quality Control</span></h1>
 
-Before you begin this section, download this folder [QC](https://drive.google.com/drive/folders/1X0ZZw7yvtlqWcf3jDfNSqr94bsp-u2qN?usp=share_link). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download this folder [QC](https://drive.google.com/drive/folders/1YSkCUGCcjQ2vzSOrAnFWD0MeViWDHWrK). You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
