@@ -89,7 +89,7 @@ We can also assemble genomes of multiple strains. Navigate to the [multiple_fold
       - `--cov-cutoff auto`: Automatically sets the coverage cutoff.
       - `-o $x"_output"`: Specifies the output directory for the SPAdes assembly.
 
-We will use contigs generated from this section to complete the AMR Profiling in a later section.
+We will use contigs generated from this section to complete later sections.
 
 ## Quiz
 
