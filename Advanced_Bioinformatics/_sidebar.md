@@ -11,3 +11,4 @@ Part 2 - Genomic Data Analysis
  * [Overview](/Advanced_Bioinformatics/analysis_overview.md)
  * [NGS File Formats](/Advanced_Bioinformatics/ngs_file_formats.md)
  * [NGS Data Quality Control](/Advanced_Bioinformatics/ngs_data_qc.md)
+ * [Adapter Trimming](/Advanced_Bioinformatics/adapter_trimming.md)
