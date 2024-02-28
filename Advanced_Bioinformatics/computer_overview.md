@@ -1,6 +1,5 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Overview</span></h1>
 
-
 To analyse genomic data, you will need:
 1. Genomic data
 2. Robust computers
