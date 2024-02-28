@@ -14,7 +14,7 @@ Illumina FASTQ file generation pipelines include an adapter trimming option for 
 
 ## Tool(s)
 
-We will be using FastQC and trimmomatic tools in this section. If you do not have these tools in your local machine, you can download them from a docker repository using the commands:
+We will be using FastQC and trimmomatic tools in this section. If you do not have these tools in your local machine, you can download them from a Docker repository using the commands:
 ```
 docker pull staphb/fastqc
 docker pull staphb/trimmomatic
@@ -34,7 +34,7 @@ docker_run staphb/fastqc fastqc *.fastq.gz
     docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@"
     ```
     To understand the `docker_run` function read the [Docker section of Data, Platforms & Tools](Advanced_Bioinformatics/bioinformatics_tools?id=_1-docker)
-- `staphb/fastqc`: the docker image
+- `staphb/fastqc`: the Docker image
 - `fastqc`: the tool
 -  `*.fastq.gz`: input files
    -  the `*` sign tells `fastqc` tool to run on files that end with `fastq.gz` in the folder
@@ -61,7 +61,7 @@ docker_run staphb/trimmomatic trimmomatic PE spneumo_R1.fastq.gz spneumo_R2.fast
 
 **An explanation of this command is as follows:**
 - `docker_run`: a customised function to start a container.
-- `staphb/trimmomatic`: the docker image
+- `staphb/trimmomatic`: the Docker image
 - `trimmomatic`: the tool
 - `PE`: indicating input is paired end files
 - `spneumo_R1.fastq.gz`: The first input file name

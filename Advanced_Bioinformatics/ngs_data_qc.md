@@ -21,7 +21,7 @@ In this course, we will be using the command line.
 
 ## Tool(s)
 
-We will be using FastQC tool to carry out quality control on reads. If you do not have this tool in your local machine, you can download them from a docker repository using the command: `docker pull staphb/fastqc`
+We will be using FastQC tool to carry out quality control on reads. If you do not have this tool in your local machine, you can download them from a Docker repository using the command: `docker pull staphb/fastqc`
 
 ![Pulling FastQC Docker Image 1](/img/fastqc_1.png "Pulling FastQC Docker Image 1")
 ![Pulling FastQC Docker Image 2](/img/fastqc_2.png "Pulling FastQC Docker Image 2")
@@ -56,7 +56,7 @@ We will be using FastQC tool to carry out quality control on reads. If you do no
         ```
         To understand the `docker_run` function read the [Docker section of Data, Platforms & Tools](Advanced_Bioinformatics/bioinformatics_tools?id=_1-docker)
 
-    - `staphb/fastqc`: the docker image
+    - `staphb/fastqc`: the Docker image
       - `staphb` represents the repository
       - `fastqc` represents the container image
 

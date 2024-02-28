@@ -16,7 +16,7 @@ Software management applications are indispensable tools in bioinformatics becau
 
 - **Docker Architecture**
 
-    Installing and running docker is dependent on the computer's operating system. We will define some key concepts that you will come across when installing and running docker.
+    Installing and running Docker is dependent on the computer's operating system. We will define some key concepts that you will come across when installing and running Docker.
 
     ![Docker Architecture](/img/docker_architecture.jpg "Docker Architecture")
 
@@ -126,7 +126,7 @@ Software management applications are indispensable tools in bioinformatics becau
 
     9. **Manage Docker as a Non-root User (Optional):**
 
-    To avoid using sudo with every Docker command, add your user to the docker group:
+    To avoid using sudo with every Docker command, add your user to the Docker group:
     ```
     sudo usermod -aG docker $USER
     ```
@@ -152,35 +152,31 @@ Software management applications are indispensable tools in bioinformatics becau
 
         `docker pull`: instructs Docker to download an image from a repository
 
-        `staphb/snippy`: is the docker image
+        `staphb/snippy`: the Docker image
 
-        When you pull a docker image, you should see an output similar to this…
+        When you pull a Docker image, you should see an output similar to this…
 
         ![docker pull](/img/docker_pull.png "docker pull")
 
     2. **Running a Docker image**
 
-        Starting a container from a docker image is simply done using the command docker run. A brand new Docker container is then created, and will run any command you provide within the container.
+        Starting a container from a Docker image is simply done using the command `docker run`. A brand new Docker container is then created, and will run any command you provide within the container.
 
         For example
         ```
         docker run --rm=True -v $PWD:/data -u $(id -u):$(id -g) staphb/fastqc fastqc 21999_7#176*.fastq.gz 
         ```
-        An explanation of this command is as follows:
+        **An explanation of this command is as follows:**
 
-        `docker run`: function to start a new container 
-
-        `--rm=True`: By default, when a Docker container is run without this flag, the Docker container is created,the container runs, and then exits, but is not deleted. In other words, Docker containers are NOT ephemeral by default. A local copy of the container is kept and takes up unnecessary storage space. It is a good idea to always use this flag so that the container is removed after running it, unless for some reason you need the container after the specified program has been run.
-
-        `-v $PWD:/data`: The `-v` flag mounts a volume between your local machine and the Docker container. This specific command mounts the present working directory to the /data directory within the Docker container, which makes the files on your local machine accessible to the container. You can change these paths to meet the needs of your system, however it is a good idea to have a working directory in each of the containers, and thus each container contains the /data directory for such purpose.
-
-        `-u $(id -u):$(id -g)`: By default, when Docker containers are run, they are run as the root user. This can be problematic because any files created from within the container will have root permissions/ownership and the local user will not be able to do much with them. The `-u` flag sets the container's user and group based on the user and group from the local machine, resulting in the correct file ownership.
-
-        `staphb/fastqc`: is the docker image. [ `staphb` - is the repository; `fastqc` - is the name of the container image]
-
-        `fastqc`: Command to run in that container
-
-        `21999_7#176*.fastq.gz`: Option(s) of the command (paths in options are based on container file system).
+        - `docker run`: function to start a new container 
+        - `--rm=True`: By default, when a Docker container is run without this flag, the Docker container is created,the container runs, and then exits, but is not deleted. In other words, Docker containers are NOT ephemeral by default. A local copy of the container is kept and takes up unnecessary storage space. It is a good idea to always use this flag so that the container is removed after running it, unless for some reason you need the container after the specified program has been run.
+        - `-v $PWD:/data`: The `-v` flag mounts a volume between your local machine and the Docker container. This specific command mounts the present working directory to the /data directory within the Docker container, which makes the files on your local machine accessible to the container. You can change these paths to meet the needs of your system, however it is a good idea to have a working directory in each of the containers, and thus each container contains the /data directory for such purpose.
+        - `-u $(id -u):$(id -g)`: By default, when Docker containers are run, they are run as the root user. This can be problematic because any files created from within the container will have root permissions/ownership and the local user will not be able to do much with them. The `-u` flag sets the container's user and group based on the user and group from the local machine, resulting in the correct file ownership.
+        - `staphb/fastqc`: the docker image.
+          - `staphb` - is the repository
+          - `fastqc` - is the name of the container image
+        - `fastqc`: Command to run in that container
+        - `21999_7#176*.fastq.gz`: Option(s) of the command (paths in options are based on container file system).
 
         To avoid long commands, the command
         ```
@@ -188,14 +184,14 @@ Software management applications are indispensable tools in bioinformatics becau
         ``` 
         can be incorporated into a bash function by including the following into your `~/.bashrc` (if you are using Bash shell / Linux) or `~/.zshrc` (if you are using Z shell / macOS)
 
-        - For Bash Shell, run the command and restart your terminal:
-        ```
-        echo 'function docker_run() { docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@" ;}' >> ~/.bashrc
-        ```
-        - For Z Shell, run the command and restart your terminal:
-        ```
-        echo 'function docker_run() { docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@" ;}' >> ~/.zshrc
-        ```
+          - For Bash Shell, run the command and restart your terminal:
+          ```
+          echo 'function docker_run() { docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@" ;}' >> ~/.bashrc
+          ```
+          - For Z Shell, run the command and restart your terminal:
+          ```
+          echo 'function docker_run() { docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@" ;}' >> ~/.zshrc
+          ```
 
 - **Docker Images / Bioinformatics Tools**
 
