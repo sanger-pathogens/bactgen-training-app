@@ -25,6 +25,6 @@ The modules are as follows:
 1. [Fundamental 1 (F1)](F1/): Using free web tools for visualisation of genomic data.
 </br>[F1 webinar](F1_webinar/): Wrap up session for F1.
 2. [Fundamental 2 (F2)](F2/): Using web-based drag & drop tools for genomic analysis and visualisation. 
-3. [Advanced Bioinformatics](https://jolynnem.github.io/jolynnemokaya.github.io/Bioinformatics_Workshop.html): This course material is aimed at researchers who have an interest in learning how to carry out next generation sequencing (NGS) and analysis of *Streptococcus pneumoniae* and/or *Streptococcus agalactiae*. It concentrates on the application of cutting edge genomic techniques that are currently being implemented.
+3. [Advanced Bioinformatics](Advanced_Bioinformatics/): This course material is aimed at researchers who have an interest in learning how to carry out next generation sequencing (NGS) and analysis of *Streptococcus pneumoniae* and/or *Streptococcus agalactiae*. It concentrates on the application of cutting edge genomic techniques that are currently being implemented.
 
 &copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)
