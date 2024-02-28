@@ -6,3 +6,7 @@ Part 1 - Data, Platforms & Tools
  * [Overview](/Advanced_Bioinformatics/computer_overview.md)
  * [Computer Specifications](/Advanced_Bioinformatics/computer_specifications.md)
  * [Bioinformatics Tools](/Advanced_Bioinformatics/bioinformatics_tools.md)
+
+Part 2 - Genomic Data Analysis
+ * [Overview](/Advanced_Bioinformatics/analysis_overview.md)
+ * [NGS File Formats](/Advanced_Bioinformatics/ngs_file_formats.md)
