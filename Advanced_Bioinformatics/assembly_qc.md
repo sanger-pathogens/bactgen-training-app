@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Quality Assessment of Assemblies</span></h1>
 
-Before you being this section, navigate to the [*de novo* assembly folder](https://drive.google.com/drive/folders/1ZBjdJg3b6E-2rzfRSGmr3qZnDeg4XW5d). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, navigate to the [*de novo* assembly folder](https://drive.google.com/drive/folders/1ZBjdJg3b6E-2rzfRSGmr3qZnDeg4XW5d). You will use this folder and its contents to learn and practice this section.
 
 By the end of this section, you will be able to assess the quality of assembled reads using QUAST.
 

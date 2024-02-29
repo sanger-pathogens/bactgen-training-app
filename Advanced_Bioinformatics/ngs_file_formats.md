@@ -6,7 +6,7 @@ The information of biological sequences (nucleotides and amino acids) is stored 
 
 ## FASTA Files
 
-Fasta file is a text file which consists of a single and multiple sequences. Though it is not mandatory, FASTA files generally have an extension of **.fa**, **.fas**, **.fsa**, **.fna** or **.fasta**. Each sequence has a one-line header, starting with the `>`, followed by the nucleotide (or amino acid) sequence. This sequence can be in a single line or span across multiple lines.
+FASTA file is a text file which consists of a single and multiple sequences. Though it is not mandatory, FASTA files generally have an extension of **.fa**, **.fas**, **.fsa**, **.fna** or **.fasta**. Each sequence has a one-line header, starting with the `>`, followed by the nucleotide (or amino acid) sequence. This sequence can be in a single line or span across multiple lines.
 
 ![FASTA Content](/img/fasta_content.png "FASTA Content")
 

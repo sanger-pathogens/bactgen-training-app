@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Adapter Trimming</span></h1>
 
-Before you being this section, navigate to the [adapter trimming folder](https://drive.google.com/drive/folders/1d9K5BNAoP2IpuqRK5InymlPelLgxzDKS). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, navigate to the [adapter trimming folder](https://drive.google.com/drive/folders/1d9K5BNAoP2IpuqRK5InymlPelLgxzDKS). You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
