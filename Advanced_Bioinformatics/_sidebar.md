@@ -21,6 +21,6 @@ Part 2 - Genomic Data Analysis
  * [AMR Profiling](/Advanced_Bioinformatics/amr.md)
  * [Mapping](/Advanced_Bioinformatics/mapping.md)
  * [Variant Calling](/Advanced_Bioinformatics/variant_calling.md)
- * [Phylogenetics](/)
+ * [Phylogenetics](/Advanced_Bioinformatics/phylogenetics.md)
 
 [Acknowledgement](/Advanced_Bioinformatics/acknowledgement.md)
