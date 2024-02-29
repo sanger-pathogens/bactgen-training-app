@@ -15,7 +15,7 @@ Part 2 - Genomic Data Analysis
  * [Taxonomy Classification](/Advanced_Bioinformatics/taxonomy_classification.md)
  * [*De novo* Assembly](/Advanced_Bioinformatics/de_novo_assembly.md)
  * [Quality Assessment of Assemblies](/Advanced_Bioinformatics/assembly_qc.md)
- * [Genome Annotation](/)
+ * [Genome Annotation](/Advanced_Bioinformatics/genome_annotation.md)
  * [Serotyping](/)
  * [Multilocus Sequence Typing](/)
  * [AMR Profiling](/)
