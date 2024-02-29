@@ -20,7 +20,7 @@ Part 2 - Genomic Data Analysis
  * [Multilocus Sequence Typing](/Advanced_Bioinformatics/mlst.md)
  * [AMR Profiling](/Advanced_Bioinformatics/amr.md)
  * [Mapping](/Advanced_Bioinformatics/mapping.md)
- * [Variant calling](/)
+ * [Variant Calling](/Advanced_Bioinformatics/variant_calling.md)
  * [Phylogenetics](/)
 
 [Acknowledgement](/Advanced_Bioinformatics/acknowledgement.md)
