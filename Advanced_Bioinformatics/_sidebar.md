@@ -16,7 +16,7 @@ Part 2 - Genomic Data Analysis
  * [*De novo* Assembly](/Advanced_Bioinformatics/de_novo_assembly.md)
  * [Quality Assessment of Assemblies](/Advanced_Bioinformatics/assembly_qc.md)
  * [Genome Annotation](/Advanced_Bioinformatics/genome_annotation.md)
- * [Serotyping](/)
+ * [Serotyping](/Advanced_Bioinformatics/serotyping.md)
  * [Multilocus Sequence Typing](/)
  * [AMR Profiling](/)
  * [Mapping](/)
