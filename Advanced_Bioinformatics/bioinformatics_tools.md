@@ -1,10 +1,8 @@
-<h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Tools</span></h1>
-
-## Bioinformatics Tools
-
-Before we list the bioinformatics tools required to analyse genomic data, we will first need to understand various software management applications that we would need to run these tools.
+<h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Bioinformatics Tools</span></h1>
 
 ## Software Management Applications
+
+Before we list the bioinformatics tools required to analyse genomic data, we will first need to understand various software management applications that we would need to run these tools.
 
 Software management applications are indispensable tools in bioinformatics because they simplify software management, enhance reproducibility, support collaboration, and provide the flexibility needed to tackle the complex and dynamic nature of biological data analysis. These tools contribute to the efficiency and rigor of bioinformatics research and analysis workflows. Here, we will provide an overview of two software management applications, i.e., Docker and Conda.
 
@@ -290,5 +288,41 @@ Software management applications are indispensable tools in bioinformatics becau
       ```
 
     **N/B:** Miniconda is a great choice for users who prefer a more minimalistic and customizable setup. It allows you to build environments tailored to specific projects or use cases without the overhead of a larger distribution like Anaconda.
+
+## Bioinformatics Tools
+
+### 1. IGV
+
+- **Overview**
+
+    The Integrative Genomics Viewer (IGV) from the Broad Center allows you to view several types of data files involved in any NGS analysis that employs a reference genome, including how reads from a dataset are mapped, gene annotations, and predicted genetic variants.
+
+- **Launching IGV**
+  
+  There are multiple ways to launch IGV on a local computer:
+
+  1. **Locally on the classroom machines booted in Linux**
+        
+        This downloads the IGV executable and tells the terminal to launch it (via the `java` command).
+
+        ```
+        wget https://data.broadinstitute.org/igv/projects/downloads/2.17/IGV_2.17.2.zip
+        unzip IGV_2.17.2.zip
+        cd IGV_2.17.2
+        java -Xmx2g -jar igv.jar
+        ```
+
+  2. **In a Web browser**
+   
+        Navigate a web browser to this page: https://igv.org/app/. This web app does not use Java, and requires no downloads.
+
+  3. **Locally on your own Mac or Windows computer**
+
+        Use this link to download IGV: https://igv.org/doc/desktop/#DownloadPage/
+        
+        After unzipping, you should be able to click on `igv.bat` for Windows or `igv.command` on macOS to lauch IGV. If this is not working, you might want to try the web version.
+
+- **Using IGV**
+  - How to use IGV has been described [here](https://training.galaxyproject.org/training-material/topics/introduction/tutorials/igv-introduction/tutorial.html).
 
 <style>body {text-align: justify}</style>
