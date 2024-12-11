@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Taxonomy Classification</span></h1>
 
-Before you being this section, navigate to the [taxonomy classification folder](https://drive.google.com/drive/folders/1YU4Ac_mm3bK7XyXjDcLMOwpt-xwjarLN). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Taxonomy_classification folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Taxonomy_classification/), save them into a folder named `Taxonomy_classification` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -14,6 +14,10 @@ docker pull staphb/kraken2
 ```
 ![Docker pulling Kraken2](/img/taxonomy_1.png "Docker pulling Kraken2")
 
+You also need to download and unarchive a Kraken2 database to perform classification using the command (this could take a while depending on your internet connection):
+```
+mkdir -p k2_standard_08gb_20221209 && wget -qO- https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20221209.tar.gz | tar -xvz -C k2_standard_08gb_20221209
+```
 
 ## Classification
 
@@ -76,7 +80,6 @@ We will run a custom bash script to do the assessment
 ```
 bash percentage_calculator.sh
 ``` 
-The script is available in the kraken folder
 
 ![QC on Pneumo Percentage](/img/taxonomy_5.png "QC on Pneumo Percentage")
 
