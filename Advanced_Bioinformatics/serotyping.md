@@ -2,7 +2,7 @@
 
 ## Serotyping - *Streptococcus pneumoniae*
 
-Before you begin this section, navigate to the [s.pneumoniae folder](https://drive.google.com/drive/folders/1eaVWldrU35i-XW8jSbaSsdntO9mxFBdT). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Serotyping_S_pneumoniae folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Serotyping_S_pneumoniae/), save them into a folder named `Serotyping_S_pneumoniae` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ### Overview
 
@@ -41,7 +41,12 @@ First, you can download the PneumoCaT database using the command:
 docker_run staphb/seroba seroba getPneumocat PneumoCaT_dir
 ```
 
-This command downloads PneumoCat and build an `.tsv` formatted metadata file out of it. However, for this module we will use `seroba_k71_14082017` database as it is up to date. 
+This command downloads PneumoCat and build an `.tsv` formatted metadata file out of it. 
+
+However, for this module we will use `seroba_k71_14082017` database, and you will need to extract it from the downloaded `seroba_k71_14082017.tar.gz` using the command:
+```
+tar -xvf seroba_k71_14082017.tar.gz
+``` 
 
 1. To predict the serotype of a single strain (`17150_4#79`), we will use the command:
    ```
@@ -126,7 +131,8 @@ This command downloads PneumoCat and build an `.tsv` formatted metadata file out
 
 ## Serotyping - *Streptococcus agalactiae*
 
-Before you begin this section, navigate to the [s.agalactiae folder](https://drive.google.com/drive/folders/1eaZKEKqoh3Y9X6wSStBaWLsRGyNT22Kj). You  will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Serotyping_S_agalactiae folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Serotyping_S_agalactiae/), save them into a folder named `Serotyping_S_agalactiae` and then navigate to it. You will use this folder and its contents to learn and practice this section.
+
 
 ### Overview
 
@@ -190,5 +196,6 @@ Further reading:
       ```
       `--input_pe *.fastq.gz`: specifies the input file are multiple compressed fastq.gz files. 
 
+      The output file from the above run is `s.agalactiae__genes__GBS-SBG__results.txt`.
 
 <style>body {text-align: justify}</style>
