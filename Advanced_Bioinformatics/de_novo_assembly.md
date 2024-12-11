@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em"><i>De novo</i> Assembly</span></h1>
 
-Before you begin this section, navigate to the [*de novo* assembly folder](https://drive.google.com/drive/folders/1ZBjdJg3b6E-2rzfRSGmr3qZnDeg4XW5d). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [De_novo_assembly folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=De_novo_assembly/), save them into a folder named `De_novo_assembly` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -54,7 +54,7 @@ head contigs.fasta
 
 ## Generating a *de novo* Assembly for Multiple Strains
 
-We can also assemble genomes of multiple strains. Navigate to the [multiple_folder](https://drive.google.com/drive/folders/1Z_I1KAihIZZjBFx7c1LR83nZmtKPRbkT) folder and carry out the steps below.
+We can also assemble genomes of multiple strains, carry out the steps below.
  
 1. We will first create a folder for each pair of compressed FASTQ files and named after the strain id using the command:
     ```
@@ -93,7 +93,7 @@ We will use contigs generated from this section to complete later sections.
 
 ## Quiz
 
-Navigate to the [s.agalactiae folder](https://drive.google.com/drive/folders/1Zf0L4j1As-yF4bibTathb8-tQC_ES3yC). Explore the content of this folder and carry out:
+Download the files in the [Assignment_S_agalactiae folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Assignment_S_agalactiae/), save them into a folder named `Assignment_S_agalactiae` and then navigate to it. Explore the content of this folder and carry out:
 - *de novo* assembly for a single strain
 - *de novo* assembly for multiple strains  
 
