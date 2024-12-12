@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Mapping</span></h1>
 
-Before you begin this section, navigate to the [mapping folder](https://drive.google.com/drive/folders/1UlHvrhniA8KxxsVygqgOkkjFNsg8GIfk). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Mapping folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Mapping/), save them into a folder named `Mapping` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -200,11 +200,13 @@ This time we use `-f4`, which only include read alignment that do have the unmap
 - How many reads are mapped to the `Reference_sequence_GPSC46.fa` genome?
 - How many reads are unmapped?
 
+### Number of Mapped Read Reads
+
 Technically, the above command gives the number of mapped read alignment not reads. A read could be mapped equally well to multiple positions (one will be called the primary alignment, and others secondary alignment [sam flag 256], or a read could be split into two parts (e.g., splicing) with one part being the primary alignment and the others supplementary [sam flag 2048]).
 
 So to get the true number of mapped reads you need to count the alignment that do not have flags 4 (unmapped), 256 (not primary), and 2048 (supplementary) = 4+256+2048 = 2308.
 
-### Number of Mapped Read Reads
+Both commands should work the same:
 ```
 docker_run staphb/samtools samtools view -c -F2308 GPSC46bwa.bam
 docker_run staphb/samtools samtools view -c -F4 -F256 -F2048 GPSC46bwa.bam
@@ -223,8 +225,8 @@ Open the `GPSC46bwa_bamstats.txt` file to view the statistics for all the reads
 
 You will require the following files to view mapped reads in IGV:
 
-- Reference sequence that you used to map your reads
-- Sorted and indexed mapped read BAM file
+- Reference sequence that you used to map your reads (`.fa`)
+- Sorted and indexed mapped read BAM file (`.bam` and `.bam.bai`)
 
 Launch IGV using methods outlines in the [IGV section of Data, Platforms & Tools](Advanced_Bioinformatics/bioinformatics_tools?id=_1-igv).
 
