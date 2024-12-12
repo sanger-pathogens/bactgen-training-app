@@ -202,7 +202,6 @@ We will use various bioinformatics tools in this course, and the table below sho
 | SPAdes | https://github.com/ablab/spades/releases | De novo assembly | `docker pull staphb/spades` |
 | snp-sites | https://github.com/sanger-pathogens/snp-sites | Rapidly extract SNPs from a multi-FASTA alignment | `docker pull staphb/snp-sites` |
 | QUAST | https://github.com/ablab/quast | Quality assessment for genome assemblies | `docker pull staphb/quast` |
-| BLAST | https://github.com/ncbi/blast_plus_docs | Compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches | `docker pull ncbi/blast` |
 | Kraken2 | https://github.com/DerrickWood/kraken2 | Kraken is an ultrafast and highly accurate program for assigning taxonomic labels to metagenomic DNA sequences | `docker pull staphb/kraken2` |
 | snippy | https://github.com/tseemann/snippy | Rapid haploid variant calling and core genome alignment | `docker pull staphb/snippy` |
 | FastTree | http://www.microbesonline.org/fasttree/ | Phylogenetic tree builder | `docker pull staphb/fasttree` |
@@ -210,7 +209,6 @@ We will use various bioinformatics tools in this course, and the table below sho
 | PopPUNK | https://github.com/bacpop/PopPUNK | Clustering | `docker pull staphb/poppunk` |
 | Abricate | https://github.com/tseemann/abricate | Mass screening of contigs for antimicrobial resistance or virulence genes | `docker pull staphb/abricate` |
 | Prokka | https://github.com/tseemann/prokka | Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files | `docker pull staphb/prokka` |
-| Any2fasta | https://github.com/tseemann/any2fasta | Convert various sequence formats to FASTA | `docker pull staphb/any2fasta` |
 | ARIBA | https://github.com/sanger-pathogens/ariba | Antimicrobial Resistance Identification By Assembly | `docker pull staphb/ariba` |
 | SeroBA | https://github.com/sanger-pathogens/seroba | Identify the Serotype from Illumina NGS reads for given references | `docker pull staphb/seroba` |
 | SRST2 | https://github.com/katholt/srst2 | Gene detection and MLST | `docker pull staphb/srst2` |
