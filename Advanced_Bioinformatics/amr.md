@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">AMR Profiling</span></h1>
 
-Before you begin this section, navigate to the [AMR folder](https://drive.google.com/drive/folders/1dVlFCDbirDKuAdG5L4Rz0e8JXm9ULGh_). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [AMR folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=AMR/), save them into a folder named `AMR` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -20,14 +20,11 @@ To process with ABRicate, you should have in mind that:
 - It only supports contigs, not FASTQ reads
 - It only detects acquired resistance genes, NOT point mutations,
 - It uses a DNA sequence database, not protein
-- It needs BLAST+ >= 2.7 and any2fasta to be installed
 - It's written in Perl 
 
-Run the commands below to download the abricate, blast and any2fasta images from Docker repositories. 
+Run the commands below to download the abricate image from Docker repository. 
 ```
 docker pull staphb/abricate
-docker pull ncbi/blast
-docker pull staphb/any2fasta
 ```
 **Further reading:** 
 - https://github.com/tseemann/abricate/blob/master/README.md
@@ -58,13 +55,13 @@ View the output of the above command:
 The default database is `ncbi` but you can choose a different database using the `--db` option, for example:
 
 ```
-docker_run staphb/abricate abricate --db ncbi --quiet input file
+docker_run staphb/abricate abricate --db ncbi input_file
 ```
 
 We will run ABRicate on the `contigs.fasta` file in the SPAdes output for the strain `17150_4#79` using the command:
 
 ```
-docker_run staphb/abricate abricate --db ncbi --quiet contigs.fasta > results.tab
+docker_run staphb/abricate abricate --db card contigs.fasta > results.tab
 ```
 
 **An explanation of this command is as follows:**
@@ -79,7 +76,6 @@ docker_run staphb/abricate abricate --db ncbi --quiet contigs.fasta > results.ta
 
 - `abricate`: the tool
 - `--db card`: specifies the database
-- `--quiet`: no screen output
 - `contigs.fasta`: input file
 - `> results.tab`: specifies the output file
 
@@ -87,7 +83,7 @@ View the output of the above command (open the `results.tab` file):
 
 ![ABRicate Result](/img/amr_2.png "ABRicate Result")
 
-This results indicate that this strain has Tet(M), Msr(D) and mef(A) genes which markers for tetracycline and macrolide resistance, respectively.
+For example, the above result indicates that this strain has Tet(M), Msr(D) and mef(A) genes which markers for tetracycline and macrolide resistance, respectively.
 
 
 ### 2. ARIBA
@@ -129,34 +125,33 @@ We will execute Ariba following these steps:
       - Alternative database options that can be used are: `resfinder`, `argannot`, `megares`, `plasmidfinder`, `resfinder`, `srst2_argannot`, `vfdb_core`, `vfdb_full`, `virulencefinder`.
     - `out.card`: is the output name prefix
 
-    Next we will need to format the reference database using the `prepareref` command.
-
-    So type: 
+2. Next we will need to format the reference database using the `prepareref` command:
     ```
     docker_run staphb/ariba ariba prepareref -f out.card.fa -m out.card.tsv out.card.prepareref
     ```
-
+    **An explanation of this command is as follows:**
     - `-f`: is the file of resistance genes in fasta format
     - `-m`: is a metadata file for the resistance genes
     - `out.card.prepareref`: is a directory that will contain the prepared database files for running ARIBA.
 
-    Explore your directory using `ls` command. You should have the following files in your directory:
+3. Explore your directory using `ls` command. You should have the following files in your directory:
 
     - `out.card.fa`
     - `out.card.prepareref`
     - `out.card.tsv`
 
-2. To execute ARIBA on a single read (`17150_4#79`), we will use the command:
-  ```
-  docker_run staphb/ariba ariba run out.card.prepareref 17150_4#79_1.fastq.gz 17150_4#79_2.fastq.gz 17150_4#79_out.run
-  ```
-  - `out.card.prepareref`: is the directory containing the argannot database files
-  - `17150_4#79_1.fastq.gz` & `17150_4#79_2.fastq.gz`: `17150_4#79` forward and reverse `fastq.gz` files
-  - `17150_4#79_out.run`: is the directory containing the results
+4. To execute ARIBA on a single read (`17150_4#79`), we will use the command:
+    ```
+    docker_run staphb/ariba ariba run out.card.prepareref 17150_4#79_1.fastq.gz 17150_4#79_2.fastq.gz 17150_4#79_out.run
+    ```
+    **An explanation of this command is as follows:**
+     - `out.card.prepareref`: is the directory containing the argannot database files
+     - `17150_4#79_1.fastq.gz` & `17150_4#79_2.fastq.gz`: `17150_4#79` forward and reverse `fastq.gz` files
+     - `17150_4#79_out.run`: is the directory containing the results
 
   View the detected AMR genes in the `17150_4#79_out.run/report.tsv` file.
 
-3. To execute ARIBA on a multiple reads
+1. To execute ARIBA on a multiple reads
 
      1. We will first  create a folder for each pair of compressed fastq files and named after the strain id using the command:
          ```
@@ -186,8 +181,8 @@ We will execute Ariba following these steps:
           **An explanation of this command is as follows:**
           
           - `for x in *#* ; do`: This starts a loop where `x` takes on the value of each file or directory that contains a `#` in its name.
-          - `docker_run staphb/ariba ariba run out.card.prepareref $x/${x}_1.fastq.gz $x/${x}_2.fastq.gz $x"_output"`: This is the command that runs the Docker container (`staphb/ariba`). It appears to be running the `ariba run` command with specific parameters:
-            - `out.card.prepareref`: This seems to be the name of the database or reference used for the analysis.
+          - `docker_run staphb/ariba ariba run out.card.prepareref $x/${x}_1.fastq.gz $x/${x}_2.fastq.gz $x"_output"`: This is the command that runs the Docker container (`staphb/ariba`). It is running the `ariba run` command with specific parameters:
+            - `out.card.prepareref`: The name of the database or reference used for the analysis.
             - `$x/${x}_1.fastq.gz`: The path to the first paired-end FASTQ file.
             - `$x/${x}_2.fastq.gz`: The path to the second paired-end FASTQ file.
             - `$x"_output"` :The output directory for the analysis.
@@ -198,7 +193,8 @@ We will execute Ariba following these steps:
         ```
         docker_run staphb/ariba ariba summary out.summary *_output/report.tsv
         ```
-
+          **An explanation of this command is as follows:**
+          - `ariba summary`: summarise data from several runs
           - `out.summary`: is the prefix for the output files
           - `*_output/report.tsv`: is the report file made by the runs of ARIBA for the isolates `17150_4#79`, `13415_4#10`, `15608_3#13`, `21127_1#30` and `17175_6#87`. This report file is located in their respective directories.
 
@@ -212,7 +208,7 @@ We will execute Ariba following these steps:
 
         To visualise the results open up the web browser, and type in the URL: https://jameshadfield.github.io/phandango/#/
 
-        From a file view window drag and drop the two Phandango files, `out.summary.phandango.tre` and `out.summary.phandango.csv`, into the browser window. You will get the output shown in the figure below.
+        Drag and drop the two Phandango files, `out.summary.phandango.tre` and `out.summary.phandango.csv`, into the browser window. You will get the output shown similar to the figure below.
 
         ![Phandango result](/img/amr_3.png "Phandango result")
 
