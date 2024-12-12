@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Multilocus Sequence Typing</span></h1>
 
-Before you begin this section, navigate to the [mlst folder](https://drive.google.com/drive/folders/1d_ymYlSDKkYs-51BNHSAhNiHngAE95Gy). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [MLST folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=MLST/), save them into a folder named `MLST` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -35,8 +35,6 @@ SRST2 requires:
     ```
     docker_run staphb/srst2 getmlst.py --species "Streptococcus pneumoniae"
     ```
-
-    *Note:* scripts for SRST2 requires an older version of SAMtools and Bowtie so you will need to have installed `samtools-0.1.18` and `bowtie2-2.1.0`
 
     Explore the content of your working directory using `ls` command. You should have the following files:
     - `alleles_fasta`
@@ -87,10 +85,12 @@ SRST2 requires:
     ![srst2 result](/img/mlst_3.png "srst2 result")
     **Sample 17150_4#79 is MLST 30**
 
-1. To execute SRST2 on multiple strains, run the command: 
-docker_run staphb/srst2 srst2 --input_pe *.fastq.gz --output s.pneumo --log --mlst_db Streptococcus_pneumoniae.fasta --mlst_definitions profiles_csv --mlst_delimiter _
+3. To execute SRST2 on multiple strains, run the command: 
+   ```
+  docker_run staphb/srst2 srst2 --input_pe *.fastq.gz --output s.pneumo --log --mlst_db Streptococcus_pneumoniae.fasta --mlst_definitions profiles_csv --mlst_delimiter _
+  ```
 
---input_pe *.fastq.gz: specifies the input file are multiple compressed fastq.gz files.
+  - `--input_pe *.fastq.gz`: specifies the input file are multiple compressed fastq.gz files.
 
 ### 2. mlst
 
@@ -99,8 +99,6 @@ mlst scans contig files against traditional PubMLST typing schemes.
 Navigate to the contigs folder, and then run the command below to download the following images from a Docker repository:
 ```
 docker pull staphb/mlst
-docker pull staphb/any2fasta
-docker pull ncbi/blast
 ```
 
 **Further reading**
@@ -117,7 +115,7 @@ docker pull ncbi/blast
         ```
         docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@"
         ```
-          To understand the `docker_run` function read the [Docker section of Data, Platforms & Tools](Advanced_Bioinformatics/bioinformatics_tools?id=_1-docker)
+        To understand the `docker_run` function read the [Docker section of Data, Platforms & Tools](Advanced_Bioinformatics/bioinformatics_tools?id=_1-docker)
     - `staphb/mlst`: the Docker image
       - `staphb` - represents the repository
       - `mlst` - represents the container image
@@ -132,7 +130,7 @@ docker pull ncbi/blast
 
 2. To execute mlst on a multiple strains, we will use the command:
     ```
-    docker_run staphb/mlst mlst --legacy --scheme spneumoniae *.fasta > mlst.csv
+    docker_run staphb/mlst mlst --legacy --scheme spneumoniae *contigs.fasta > mlst.csv
     ```
 
     **An explanation of this command is as follows:**
@@ -151,7 +149,7 @@ docker pull ncbi/blast
     - `--scheme spneumoniae`: specifies the species (pubmlst scheme). 
       - You can identify the scheme using the command `docker_run staphb/mlst mlst --longlist`
 
-    - `*.fasta`: input files
+    - `*contigs.fasta`: input files
     - `> mlst.csv`: specifies output file
 
 <style>body {text-align: justify}</style>
