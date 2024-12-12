@@ -205,7 +205,7 @@ We will use various bioinformatics tools in this course, and the table below sho
 | Kraken2 | https://github.com/DerrickWood/kraken2 | Kraken is an ultrafast and highly accurate program for assigning taxonomic labels to metagenomic DNA sequences | `docker pull staphb/kraken2` |
 | snippy | https://github.com/tseemann/snippy | Rapid haploid variant calling and core genome alignment | `docker pull staphb/snippy` |
 | FastTree | http://www.microbesonline.org/fasttree/ | Phylogenetic tree builder | `docker pull staphb/fasttree` |
-| Gubbins | https://github.com/nickjcroucher/gubbins | Builds phylogeny after removing regions of recombination | `docker pull sangerpathogens/gubbins` |
+| Gubbins | https://github.com/nickjcroucher/gubbins | Builds phylogeny after removing regions of recombination | `docker pull staphb/gubbins` |
 | PopPUNK | https://github.com/bacpop/PopPUNK | Clustering | `docker pull staphb/poppunk` |
 | Abricate | https://github.com/tseemann/abricate | Mass screening of contigs for antimicrobial resistance or virulence genes | `docker pull staphb/abricate` |
 | Prokka | https://github.com/tseemann/prokka | Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files | `docker pull staphb/prokka` |
