@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Variant Calling</span></h1>
 
-Before you begin this section, navigate to the [variant_calling folder](https://drive.google.com/drive/folders/18PpidkQMwZEyaCc5lJr_Rp0Oa6Smkg0a). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Variant_calling folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Variant_calling/), save them into a folder named `Variant_calling` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -142,7 +142,7 @@ A description of this command is as follows:
 - ```
   > snps.bam
   ```
-  `snps.bam` is the outputfile
+  `snps.bam` is the output file
 
 To see `samtools` processing, type the command
 ```
@@ -247,12 +247,12 @@ Now let us perform variant calling for a second genome.
 
 Running a set of isolate sequences (reads or contigs) against the same reference, you can use the `snippy-multi` script. 
 
-Navigate to the [multiple_files folder](https://drive.google.com/drive/folders/1UnZQV-f7N0GZt_c8aER0XGwkx_toqeva) and explore its contents. To execute the `snippy-multi` script, you will need:
+To execute the `snippy-multi` script, you will need:
 - Paired end reads (single-end reads or assembled contigs)
 - Tab separated input file (which contains a list of the forward and reverse reads in the following format: ID, names of R1 reads and names of R2 reads)
 - Reference sequence
 
-Explore the tab separated input file; it should have the following format
+Explore the tab separated input file `list.txt`; it should have the following format
 
 ![Snippy Multi Input](/img/variant_calling_11.png "Snippy Multi Input")
 
@@ -357,11 +357,11 @@ You will get this output
 
 ### Practice exercise
 
-Now let us perform variant calling for *Streptococcus agalactiae*. Move to *the S.agalactiae* folder which is in the `Variant_calling` folder. Run Snippy on this pair of FASTQ files (`20280_5#33_1.fastq.gz` and `20280_5#33_2.fastq.gz`) and name the output directory as `gbs_folder`. There is a multiple folder within the directory - now run `Snippy` on these reads.
+Now let us perform variant calling for *Streptococcus agalactiae*. Move to the [Assignment_S_agalactiae folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Assignment_S_agalactiae/) downloaded in the [*De novo* Assembly section](Advanced_Bioinformatics/de_novo_assembly). Run Snippy on this pair of FASTQ files (`20280_5#33_1.fastq.gz` and `20280_5#33_2.fastq.gz`) and the reference (`Reference_sequence_GBS_cc17.fasta`) and name the output directory as `gbs_folder`. 
 
-Examine the results of Snippy in your new folder using `grep`, `ls` and `less`
+Then run `Snippy` on all of the reads by using `snippy-multi` and creating your own input file.
 
-Generate multiple sequence alignment
+Examine the results of Snippy using `grep`, `ls` and `less`
 
 **Further reading:** 
 - [Snippy](https://github.com/tseemann/snippy) 

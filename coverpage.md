@@ -1,12 +1,3 @@
-<!-- coverpage.md -->
-
-<!-- TODO: Add image -->
-<!-- <img src="/img/training_banner.png"></img> -->
-<!-- <div align=center>
-<img width="200" src="/img/training_banner.png"/>
-</div> -->
-
-
 <div style="text-align: center">
 
 ![logo](/img/training_banner.png)

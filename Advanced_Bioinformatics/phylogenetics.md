@@ -1,5 +1,7 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Phylogenetics</span></h1>
 
+Before you begin this section, download the files in the [Phylogenetics folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Phylogenetics/), save them into a folder named `Phylogenetics` and then navigate to it. You will use this folder and its contents to learn and practice this section.
+
 ## Overview
 
 Phylogenetics is the study of evolutionary relationships among biological entities - often species, individuals or genes (which may be referred to as taxa). The major elements of phylogenetics are summarised in figure below.
@@ -40,7 +42,7 @@ docker run staphb/snp-sites snp-sites
 
 ![snp-sites Help](/img/phylogenetics_2.png "snp-sites Help")
 
-First, remove all the invariant sites and create a SNP-only multiple sequence alignment. We will use output from snippy runs described in the previous page. Run the command:
+First, remove all the invariant sites and create a SNP-only multiple sequence alignment. We will use `clean.full.aln`, which is the output from snippy runs described in the previous section. Run the command:
 ```
 docker_run staphb/snp-sites snp-sites -o clean.full.SNPs.aln clean.full.aln
 ```
@@ -69,7 +71,7 @@ docker_run staphb/snp-sites snp-sites -C clean.full.aln
 
 You can view options for `FastTree` as follows:
 ```
-docker_run staphb/fasttree FastTree FastTree -h
+docker run staphb/fasttree FastTree -h
 ```
 
 ![FastTree Help](/img/phylogenetics_4.png "FastTree Help")
@@ -135,12 +137,12 @@ The required input file for Gubbins is a whole genome FASTA alignment. Each sequ
 For this section, we will be using Gubbins. You can download it from a Docker repository using the command:
 
 ```
-docker pull sangerpathogens/gubbins
+docker pull staphb/gubbins
 ```
 
 You can view `gubbins` commands as follows:
 ```
-docker run sangerpathogens/gubbins run_gubbins.py -h
+docker run staphb/gubbins run_gubbins.py -h
 ```
 
 ![gubbins Help](/img/phylogenetics_7.png "gubbins Help")
@@ -149,7 +151,7 @@ docker run sangerpathogens/gubbins run_gubbins.py -h
 
 We will run the gubbins tool on a full genome alignment and not SNPs alignment. Now let's run this command:
 ```
-docker_run sangerpathogens/gubbins run_gubbins.py --mar -p /data/output /data/clean.full.aln
+docker_run staphb/gubbins run_gubbins.py --mar -p output clean.full.aln
 ```
 
 **An explanation of this command is as follows:**
@@ -159,12 +161,11 @@ docker_run sangerpathogens/gubbins run_gubbins.py --mar -p /data/output /data/cl
       docker run --rm=True -u $(id -u):$(id -g) -v $(pwd):/data "$@"
       ```
       To understand the `docker_run` function read the [Docker section of Data, Platforms & Tools](Advanced_Bioinformatics/bioinformatics_tools?id=_1-docker)
-  - `sanger/gubbins`: the Docker image
+  - `staphb/gubbins`: the Docker image
   - `run_gubbins.py`: the tool/program
   - `--mar`: use marginal ancestral reconstruction with RAxML instead of the default pyjar
-  - `-p /data/output`: Output to `/data` dir in the container with a prefix of `output`
-    - As `/data` dir is the mount point of `$PWD` of your host due to `-v`, you will see the files in the `$PWD` of your host
-  - `/data/clean.full.aln`: input file
+  - `-p output`: Output a prefix of `output`
+  - `clean.full.aln`: input file
 
 This command can take a few minutes to run.
 
@@ -203,7 +204,8 @@ Phandango should automatically display blocks of recombination in red (ancestral
 
 ## Clustering using PopPUNK
 
-Before you begin this section, navigate to the [clustering folder](https://drive.google.com/drive/folders/1UlHvrhniA8KxxsVygqgOkkjFNsg8GIfk). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Clustering folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Clustering/), save them into a folder named `Clustering` and then navigate to it. You will use this folder and its contents to learn and practice this section.
+
 
 ### Overview
 
@@ -229,7 +231,13 @@ docker pull staphb/poppunk
 
 1. Download database
 
-    As we are working on *Streptococcus pneumoniae*, we will download the [GPS reference database](https://gps-project.cog.sanger.ac.uk/GPS_v8_ref.zip) and [GPS designation](https://gps-project.cog.sanger.ac.uk/GPS_v8_external_clusters.csv). which we will use to cluster our genome. You can also access reference genomes of other bacterial species from this [site](https://www.bacpop.org/poppunk/).
+    As we are working on *Streptococcus pneumoniae*, we will download the [GPS reference database](https://gps-project.cog.sanger.ac.uk/GPS_v8_ref.tar.gz) and [GPS designation](https://gps-project.cog.sanger.ac.uk/GPS_v8_external_clusters.csv), which we will use to cluster our genome, by running the following commands:
+    ```
+    wget -qO- https://gps-project.cog.sanger.ac.uk/GPS_v8_ref.tar.gz | tar -xvz
+    wget https://gps-project.cog.sanger.ac.uk/GPS_v8_external_clusters.csv
+    ```
+    
+    You can also access reference genomes of other bacterial species from this [site](https://www.bacpop.org/poppunk/).
 
     The *Streptococcus pneumoniae* GPS reference genome database is saved in you directory as `GPS_v8_ref` (after unzip) and the GPS designation as `GPS_v8_external_clusters.csv`
 
@@ -237,14 +245,12 @@ docker pull staphb/poppunk
 
     Create a file which lists your sample names and paths to their sequence data using the command:
     ```
-    echo -e "17150_4#79\t/data/17150_4#79/17150_4#79_1.fastq.gz\t/data/17150_4#79/17150_4#79_2.fastq.gz" > poppunk_input.tsv
+    echo -e "sample_17175_7#59\t/data/17175_7#59.contigs.fasta" > poppunk_input.tsv
     ```
 
     This text file contains the sample names and their sequence data. It has no header, is tab separated, and contains the sample name in the first column. Subsequent columns may contain paths to either assembled or raw read data (the type will automatically be inferred by checking for the presence of quality scores). 
     
-    If you `cat poppunk_input.tsv`, you will have the output
-
-    ![poppunk_input Content](/img/phylogenetics_10.png "poppunk_input Content")
+    You can see its content by running `cat poppunk_input.tsv`
 
 3. Clustering your genomes
 
@@ -275,7 +281,7 @@ docker pull staphb/poppunk
      - `poppunk_clusters_external_clusters.csv`: GPSC v8 scheme designations
 
 **Note:**
-- If a strain has already been assigned a cluster, please rename to run popPUNK (this is to avoid crushing the tool)
+- If a strain has already been assigned a cluster, please rename to run PopPUNK (this is to avoid crashing the tool)
 - Novel Clusters are assigned NA in the `_external_clusters.csv` as they have not been defined in the v8 dataset used to designate the GPSCs. Please email: [gps@pneumogen.net](mailto:gps@pneumogen.net) to have novel clusters added to the database and a GPSC cluster name assigned after you have checked for low level contamination which may contribute to biased accessory distances.
 
 <style>body {text-align: justify}</style>

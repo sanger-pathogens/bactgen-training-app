@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Quality Assessment of Assemblies</span></h1>
 
-Before you begin this section, navigate to the [*de novo* assembly folder](https://drive.google.com/drive/folders/1ZBjdJg3b6E-2rzfRSGmr3qZnDeg4XW5d). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Quality_assessment folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Quality_assessment/), save them into a folder named `Quality_assessment` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 By the end of this section, you will be able to assess the quality of assembled reads using QUAST.
 
@@ -26,9 +26,9 @@ The QUAST package works both with and without reference genomes. However, it is 
 
 ## Assessing Generated Assemblies
 
-We will assess the quality of `17150_4#79` contigs generated from *de novo* assembly described in the previous module - copy `contigs.fasta` file to your *de novo* assembly folder. We will run the QUAST tool on the contigs using the command:
+We will assess the quality of `17150_4#79` contigs generated from *de novo* assembly described in the previous module. We will run the QUAST tool on the contigs using the command:
 ```
-docker_run staphb/quast quast.py contigs.fasta -r Reference_sequence_GPSC46.fa -g PROKKA_03052023.gff -1 17150_4#79_1.fastq.gz -2 17150_4#79_2.fastq.gz -o quast_17150_4#79_output
+docker_run staphb/quast quast.py contigs.fasta -r Reference_sequence_GPSC46.fa -g PROKKA.gff -1 17150_4#79_1.fastq.gz -2 17150_4#79_2.fastq.gz -o quast_17150_4#79_output
 ```
 ![QUAST Output](/img/assembly_qc_1.png "QUAST Output")
 
@@ -41,7 +41,7 @@ docker_run staphb/quast quast.py contigs.fasta -r Reference_sequence_GPSC46.fa -
 - `staphb/quast`: the docker image
 - `quast.py`: the tool
 - `-r Reference_sequence_GPSC46.fa`: specifies the reference sequence
-- `-g PROKKA_03052023.gff`: specifies gene in the reference genome (PROKKA output)
+- `-g PROKKA.gff`: specifies gene in the reference genome (PROKKA output)
 - `-1 17150_4#79_1.fastq.gz`: input file of forward reads
 - `-2 17150_4#79_2.fastq.gz`: input file of reverse reads
 - `-o quast_17150_4#79_output`: specifies the output folder

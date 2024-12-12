@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Genome Annotation</span></h1>
 
-Before you begin this section, navigate to the `spades_assembly` folder generated in the *De novo Assembly* module. We will be using content into learn and practice this section.
+Before you begin this section, download the files in the [Genome_annotation folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Genome_annotation/), save them into a folder named `Genome_annotation` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -17,7 +17,7 @@ Prokka finds and annotates features (both protein coding regions and RNA genes, 
 
 Run the command to download the prokka image from Docker repository.
 ```
-docker pull staphb/prokka:latest
+docker pull staphb/prokka
 ```
 ### Further reading:
 - https://github.com/tseemann/prokka
@@ -27,7 +27,7 @@ docker pull staphb/prokka:latest
 Run the command in terminal to execute Prokka:
 
 ```
-docker_run staphb/prokka:latest prokka contigs.fasta
+docker_run staphb/prokka prokka contigs.fasta
 ```
 
 **An explanation of this command is as follows:**

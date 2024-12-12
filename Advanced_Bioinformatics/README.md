@@ -23,6 +23,8 @@ This course was funded by **The Gates Foundation** through the GPS and JUNO proj
 
 *This project has been developed, designed and led by Dr. Jolynne Mokaya, Senior Bioinformatician and Bioinformatics Training Lead (for the GPS and JUNO projects), Bentley's group, Wellcome Sanger Institute.*
 
+*This website is maintained by Dr. Harry Hung, Senior Bioinformatician, Bentley's group, Wellcome Sanger Institute.*
+
 <br>
 
 &copy; [Wellcome Sanger Institute](https://www.sanger.ac.uk/)

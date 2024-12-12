@@ -1,6 +1,6 @@
 <h1 style="text-align:center"><span style="color:#246CAA; font-size:1.5em">Adapter Trimming</span></h1>
 
-Before you begin this section, navigate to the [adapter trimming folder](https://drive.google.com/drive/folders/1d9K5BNAoP2IpuqRK5InymlPelLgxzDKS). You will use this folder and its contents to learn and practice this section.
+Before you begin this section, download the files in the [Adapter_trimming folder](https://advanced_bioinformatics_training.cog.sanger.ac.uk/index.html?prefix=Adapter_trimming/), save them into a folder named `Adapter_trimming` and then navigate to it. You will use this folder and its contents to learn and practice this section.
 
 ## Overview
 
@@ -56,7 +56,7 @@ We use the tool `trimmomatic` to remove adaptors, to trim low quality reads and 
 
 To execute `trimmomatic`, we will run the command:
 ```
-docker_run staphb/trimmomatic trimmomatic PE spneumo_R1.fastq.gz spneumo_R2.fastq.gz  spneumo_R1.trimmed.fastq.gz /dev/null spneumo_R2.trimmed.fastq.gz /dev/null ILLUMINACLIP:adapters/TruSeq3-PE.fa:2:30:10 SLIDINGWINDOW:4:20 MINLEN:36
+docker_run staphb/trimmomatic trimmomatic PE spneumo_R1.fastq.gz spneumo_R2.fastq.gz  spneumo_R1.trimmed.fastq.gz /dev/null spneumo_R2.trimmed.fastq.gz /dev/null ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 SLIDINGWINDOW:4:20 MINLEN:36
 ```
 
 **An explanation of this command is as follows:**
@@ -70,7 +70,7 @@ docker_run staphb/trimmomatic trimmomatic PE spneumo_R1.fastq.gz spneumo_R2.fast
 - `/dev/null`: Discards the output file for orphaned reads from the `_1` file 
 - `/spneumo_R1.trimmed.fastq.gz`: The output file for surviving pairs from the `_2` file 
 - `/dev/null`: Discards the output file for orphaned reads from the `_2` file 
-- `ILLUMINACLIP:adapters/TruSeq3-PE.fa:2:30:10`: To clip the Illumina adapters from the input file using the adapter sequences listed in `TruSeq3-PE.fa`. The numbers `2:30:10` tell trimmomatic how to handle sequence matches to the `TruSeq3` adapters
+- `ILLUMINACLIP:TruSeq3-PE.fa:2:30:10`: To clip the Illumina adapters from the input file using the adapter sequences listed in `TruSeq3-PE.fa`. The numbers `2:30:10` tell trimmomatic how to handle sequence matches to the `TruSeq3` adapters
 - `SLIDINGWINDOW:4:20`: To use a sliding window of size 4 that will remove bases if their phred score is below 20 
 - `MINLEN:36`: This will discard and reads that do not have a at least 36 bases remaining after this trimming step 
 
